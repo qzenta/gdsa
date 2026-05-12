@@ -255,6 +255,7 @@ export const NAV_LINKS = [
       { label: "Mission & Vision", href: "/about#mission" },
       { label: "Leadership Team", href: "/about#leadership" },
       { label: "Registration", href: "/about#registration" },
+      { label: "Become a Member", href: "/membership" },
     ],
   },
   {
@@ -272,7 +273,7 @@ export const NAV_LINKS = [
   { label: "Resources", href: "/resources" },
   { label: "News", href: "/news" },
   { label: "Events", href: "/events" },
-  { label: "Membership", href: "/membership" },
+  { label: "Partners", href: "/partners" },
   { label: "Donate", href: "/donate" },
   { label: "Contact", href: "/contact" },
 ];

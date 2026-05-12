@@ -2,8 +2,9 @@ import type { Metadata } from "next";
 import PageHero from "@/components/shared/PageHero";
 import AnimateIn from "@/components/shared/AnimateIn";
 import { buildMetadata } from "@/lib/metadata";
-import { Heart, Users, BookOpen, Shield, ArrowRight, CheckCircle } from "lucide-react";
+import { Heart, Users, BookOpen, Shield, ArrowRight, CheckCircle, Lock } from "lucide-react";
 import Link from "next/link";
+import PayFastForm from "@/components/donate/PayFastForm";
 
 export const metadata: Metadata = buildMetadata({
   title: "Donate — Support African Migrants",
@@ -58,81 +59,32 @@ export default function DonatePage() {
                 })}
               </div>
 
-              <div className="bg-[#8B1A1A] rounded-xl p-6 text-white">
+              <div className="bg-[#8B1A1A] rounded-xl p-6 text-white mb-5">
                 <h3 className="font-display text-lg font-bold mb-3">Sponsorship & Corporate Giving</h3>
                 <p className="text-white/80 text-sm leading-relaxed mb-4">
                   Companies, foundations, and organisations can sponsor GDSA programmes, events,
                   and initiatives. We offer recognition, reporting, and CSR partnership opportunities.
                 </p>
                 <Link
-                  href="/contact"
+                  href="/partners"
                   className="inline-flex items-center gap-1.5 text-[#E8B84B] text-sm font-semibold hover:underline"
                 >
-                  Discuss a partnership <ArrowRight className="w-3.5 h-3.5" />
+                  View our partners page <ArrowRight className="w-3.5 h-3.5" />
                 </Link>
               </div>
-            </AnimateIn>
 
-            {/* Right: Donation form */}
-            <AnimateIn direction="right" delay={100}>
-              <div className="bg-white rounded-2xl p-8 border border-[#EDE8E0] shadow-sm">
-                <h2 className="font-display text-2xl font-bold text-[#1C1C1C] mb-2">Make a Donation</h2>
-                <p className="text-[#3A3A3A] text-sm mb-6">
-                  All donations go directly to GDSA community programmes. Payment gateway coming soon — contact us to donate directly.
-                </p>
-
-                <div className="grid grid-cols-3 gap-3 mb-5">
-                  {["R100", "R250", "R500", "R750", "R1,000", "Custom"].map((amt) => (
-                    <button
-                      key={amt}
-                      className="py-3 text-sm font-semibold border-2 border-[#8B1A1A]/20 rounded-lg text-[#8B1A1A] hover:bg-[#8B1A1A] hover:text-white hover:border-[#8B1A1A] transition-all"
-                    >
-                      {amt}
-                    </button>
-                  ))}
-                </div>
-
-                <div className="flex gap-3 mb-6">
-                  <button className="flex-1 py-2.5 text-sm font-semibold border-2 border-[#C8960C] bg-[#C8960C] text-white rounded-lg">
-                    Once-off
-                  </button>
-                  <button className="flex-1 py-2.5 text-sm font-semibold border-2 border-[#EDE8E0] text-[#3A3A3A] rounded-lg hover:border-[#C8960C] transition-colors">
-                    Monthly
-                  </button>
-                </div>
-
-                <div className="bg-[#F7F4EF] rounded-xl p-5 mb-5">
-                  <p className="text-sm font-semibold text-[#1C1C1C] mb-3">Donate via EFT / Direct Transfer:</p>
-                  <div className="space-y-2">
-                    {[
-                      { label: "Account Name", val: "Ghana Diaspora SA" },
-                      { label: "Account No.", val: "Contact us for details" },
-                      { label: "Reference", val: "GDSA-DONATION-[Your Name]" },
-                    ].map((r) => (
-                      <div key={r.label} className="flex justify-between text-sm">
-                        <span className="text-[#3A3A3A]/60">{r.label}</span>
-                        <span className="text-[#1C1C1C] font-medium">{r.val}</span>
-                      </div>
-                    ))}
-                  </div>
-                </div>
-
-                <Link
-                  href="/contact"
-                  className="w-full flex items-center justify-center gap-2 py-3 bg-[#8B1A1A] text-white font-semibold rounded-lg hover:bg-[#5C0000] transition-colors"
-                >
-                  <Heart className="w-4 h-4" /> Contact Us to Donate
-                </Link>
-
-                <div className="mt-5 space-y-2">
+              {/* EFT Details */}
+              <div className="bg-white rounded-xl p-5 border border-[#EDE8E0]">
+                <p className="text-sm font-semibold text-[#1C1C1C] mb-3">Donate via EFT / Direct Transfer:</p>
+                <div className="space-y-2">
                   {[
-                    "100% goes to community programmes",
-                    "Registered NPC — transparent governance",
-                    "Annual impact report for donors R500+",
-                  ].map((p) => (
-                    <div key={p} className="flex items-center gap-2 text-xs text-[#3A3A3A]/70">
-                      <CheckCircle className="w-3.5 h-3.5 text-[#C8960C] shrink-0" />
-                      {p}
+                    { label: "Account Name", val: "Ghana Diaspora SA" },
+                    { label: "Account No.", val: "Contact us for details" },
+                    { label: "Reference", val: "GDSA-DONATION-[Your Name]" },
+                  ].map((r) => (
+                    <div key={r.label} className="flex justify-between text-sm">
+                      <span className="text-[#3A3A3A]/60">{r.label}</span>
+                      <span className="text-[#1C1C1C] font-medium">{r.val}</span>
                     </div>
                   ))}
                 </div>
@@ -150,6 +102,36 @@ export default function DonatePage() {
                 >
                   Volunteer with GDSA <ArrowRight className="w-3.5 h-3.5" />
                 </Link>
+              </div>
+            </AnimateIn>
+
+            {/* Right: PayFast Donation Form */}
+            <AnimateIn direction="right" delay={100}>
+              <div className="bg-white rounded-2xl p-8 border border-[#EDE8E0] shadow-sm">
+                <div className="flex items-center justify-between mb-2">
+                  <h2 className="font-display text-2xl font-bold text-[#1C1C1C]">Make a Donation</h2>
+                  <div className="flex items-center gap-1.5 text-xs text-[#3A3A3A]/50">
+                    <Lock className="w-3 h-3" /> Secured by PayFast
+                  </div>
+                </div>
+                <p className="text-[#3A3A3A] text-sm mb-6">
+                  Pay securely with card, EFT, or SnapScan via PayFast — South Africa&apos;s leading payment gateway.
+                </p>
+
+                <PayFastForm />
+
+                <div className="mt-5 space-y-2">
+                  {[
+                    "100% goes to community programmes",
+                    "Registered NPC — transparent governance",
+                    "Annual impact report for donors R500+",
+                  ].map((p) => (
+                    <div key={p} className="flex items-center gap-2 text-xs text-[#3A3A3A]/70">
+                      <CheckCircle className="w-3.5 h-3.5 text-[#C8960C] shrink-0" />
+                      {p}
+                    </div>
+                  ))}
+                </div>
               </div>
             </AnimateIn>
           </div>

@@ -4,8 +4,11 @@ import "./globals.css";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import WhatsAppButton from "@/components/shared/WhatsAppButton";
+import DonorPopup from "@/components/shared/DonorPopup";
 import { SITE } from "@/lib/site";
 import { buildOrganizationSchema, buildWebSiteSchema } from "@/lib/metadata";
+import { Analytics } from "@vercel/analytics/next";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter", display: "swap" });
 const playfair = Playfair_Display({
@@ -52,6 +55,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <main className="flex-1">{children}</main>
         <Footer />
         <WhatsAppButton />
+        <DonorPopup />
+        <Analytics />
+        <SpeedInsights />
       </body>
     </html>
   );
