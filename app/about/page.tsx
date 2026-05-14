@@ -144,10 +144,10 @@ export default function AboutPage() {
 
           <div className="grid md:grid-cols-2 gap-6 mb-16">
             <AnimateIn>
-              <div className="bg-[#8B1A1A] rounded-xl p-8 text-white h-full">
-                <Target className="w-8 h-8 text-[#E8B84B] mb-4" />
-                <h3 className="font-display text-xl font-bold mb-3">Our Mission</h3>
-                <p className="text-white/80 leading-relaxed">
+              <div className="group bg-[#8B1A1A] rounded-xl p-8 text-white h-full transition-all duration-300 hover:scale-[1.02] hover:shadow-2xl hover:bg-[#a01f1f] cursor-default">
+                <Target className="w-8 h-8 text-[#E8B84B] mb-4 transition-transform duration-300 group-hover:scale-110 group-hover:rotate-12" />
+                <h3 className="font-display text-xl font-bold mb-3 group-hover:text-[#E8B84B] transition-colors duration-300">Our Mission</h3>
+                <p className="text-white/80 leading-relaxed group-hover:text-white transition-colors duration-300">
                   To empower African migrants in South Africa through community-driven support,
                   legal awareness, documentation assistance, entrepreneurship development, and
                   advocacy for migrant rights — ensuring every individual has the dignity, information,
@@ -156,10 +156,10 @@ export default function AboutPage() {
               </div>
             </AnimateIn>
             <AnimateIn delay={80}>
-              <div className="bg-[#1C1C1C] rounded-xl p-8 text-white h-full">
-                <Eye className="w-8 h-8 text-[#C8960C] mb-4" />
-                <h3 className="font-display text-xl font-bold mb-3">Our Vision</h3>
-                <p className="text-white/80 leading-relaxed">
+              <div className="group bg-[#1C1C1C] rounded-xl p-8 text-white h-full transition-all duration-300 hover:scale-[1.02] hover:shadow-2xl hover:bg-[#2a2a2a] cursor-default">
+                <Eye className="w-8 h-8 text-[#C8960C] mb-4 transition-transform duration-300 group-hover:scale-110 group-hover:-rotate-12" />
+                <h3 className="font-display text-xl font-bold mb-3 group-hover:text-[#C8960C] transition-colors duration-300">Our Vision</h3>
+                <p className="text-white/80 leading-relaxed group-hover:text-white transition-colors duration-300">
                   A South Africa where African migrants are fully integrated, legally protected,
                   economically empowered, and socially valued — where the Pan-African community
                   thrives as a contributor to this nation&apos;s growth, culture, and future.

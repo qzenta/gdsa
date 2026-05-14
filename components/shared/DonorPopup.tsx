@@ -12,15 +12,21 @@ interface Donor {
 
 const DONORS: Donor[] = [
   { name: "Abena K.", amount: "R500", location: "Johannesburg", timeAgo: "2 minutes ago" },
-  { name: "Kofi M.", amount: "R1,000", location: "Pretoria", timeAgo: "8 minutes ago" },
-  { name: "Ama A.", amount: "R250", location: "Alberton", timeAgo: "15 minutes ago" },
-  { name: "Kweku T.", amount: "R750", location: "Soweto", timeAgo: "22 minutes ago" },
-  { name: "Akosua B.", amount: "R150", location: "Sandton", timeAgo: "31 minutes ago" },
-  { name: "Yaw O.", amount: "R2,000", location: "Cape Town", timeAgo: "45 minutes ago" },
-  { name: "Efua S.", amount: "R350", location: "Durban", timeAgo: "1 hour ago" },
-  { name: "Nana A.", amount: "R500", location: "Ekurhuleni", timeAgo: "1 hour ago" },
-  { name: "Kojo D.", amount: "R100", location: "Germiston", timeAgo: "2 hours ago" },
-  { name: "Adwoa F.", amount: "R1,500", location: "Johannesburg", timeAgo: "3 hours ago" },
+  { name: "Sophie M.", amount: "€50", location: "Amsterdam", timeAgo: "6 minutes ago" },
+  { name: "Emmanuel O.", amount: "R1,000", location: "Pretoria", timeAgo: "11 minutes ago" },
+  { name: "Lena H.", amount: "€75", location: "Berlin", timeAgo: "18 minutes ago" },
+  { name: "Patience A.", amount: "R250", location: "Cape Town", timeAgo: "24 minutes ago" },
+  { name: "James W.", amount: "£40", location: "London", timeAgo: "31 minutes ago" },
+  { name: "Yaw O.", amount: "R2,000", location: "Sandton", timeAgo: "45 minutes ago" },
+  { name: "Claire D.", amount: "€100", location: "Paris", timeAgo: "52 minutes ago" },
+  { name: "Fatima B.", amount: "R350", location: "Durban", timeAgo: "1 hour ago" },
+  { name: "Pieter V.", amount: "R750", location: "Stellenbosch", timeAgo: "1 hour ago" },
+  { name: "Amara S.", amount: "R500", location: "Ekurhuleni", timeAgo: "2 hours ago" },
+  { name: "Thomas K.", amount: "€60", location: "Brussels", timeAgo: "2 hours ago" },
+  { name: "Nana A.", amount: "R1,500", location: "Alberton", timeAgo: "3 hours ago" },
+  { name: "Maria G.", amount: "€80", location: "Lisbon", timeAgo: "3 hours ago" },
+  { name: "Kweku T.", amount: "R300", location: "Germiston", timeAgo: "4 hours ago" },
+  { name: "Anna L.", amount: "SEK 500", location: "Stockholm", timeAgo: "5 hours ago" },
 ];
 
 const FIRST_DELAY = 12000;
@@ -39,29 +45,20 @@ export default function DonorPopup() {
     setCurrent(donor);
     setVisible(true);
     setIndex((i) => i + 1);
-
     const hideTimer = setTimeout(() => setVisible(false), VISIBLE_DURATION);
     return () => clearTimeout(hideTimer);
   }, [index, dismissed]);
 
   useEffect(() => {
     if (dismissed) return;
-
-    const first = setTimeout(() => {
-      showNext();
-    }, FIRST_DELAY);
-
+    const first = setTimeout(() => { showNext(); }, FIRST_DELAY);
     return () => clearTimeout(first);
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [dismissed]);
 
   useEffect(() => {
     if (dismissed) return;
-
-    const interval = setInterval(() => {
-      showNext();
-    }, INTERVAL);
-
+    const interval = setInterval(() => { showNext(); }, INTERVAL);
     return () => clearInterval(interval);
   }, [showNext, dismissed]);
 
@@ -94,10 +91,7 @@ export default function DonorPopup() {
           </Link>
         </div>
         <button
-          onClick={() => {
-            setVisible(false);
-            setDismissed(true);
-          }}
+          onClick={() => { setVisible(false); setDismissed(true); }}
           aria-label="Dismiss notification"
           className="text-[#3A3A3A]/40 hover:text-[#3A3A3A] transition-colors shrink-0 mt-0.5"
         >

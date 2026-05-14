@@ -8,6 +8,7 @@ import DonateSection from "@/components/home/DonateSection";
 import MembershipCTA from "@/components/home/MembershipCTA";
 import HomeFAQ from "@/components/home/HomeFAQ";
 import LatestNews from "@/components/home/LatestNews";
+import GlobalPartnersMarquee from "@/components/shared/GlobalPartnersMarquee";
 import { buildFAQSchema } from "@/lib/metadata";
 
 export const metadata: Metadata = {
@@ -44,6 +45,7 @@ export default function HomePage() {
       <MissionBanner />
       <ServicesGrid />
       <StatsSection />
+      <GlobalPartnersMarquee />
       <Testimonials />
       <LatestNews />
       <DonateSection />

@@ -274,6 +274,5 @@ export const NAV_LINKS = [
   { label: "News", href: "/news" },
   { label: "Events", href: "/events" },
   { label: "Partners", href: "/partners" },
-  { label: "Donate", href: "/donate" },
   { label: "Contact", href: "/contact" },
 ];

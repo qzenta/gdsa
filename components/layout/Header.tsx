@@ -77,27 +77,31 @@ export default function Header() {
               >
                 <Link
                   href={link.href}
-                  className={`flex items-center gap-1 px-3 py-2 text-sm font-medium rounded transition-colors ${
+                  className={`flex items-center whitespace-nowrap px-3 py-2 text-sm font-medium rounded transition-colors ${
                     isActive(link.href)
                       ? "text-[#E8B84B]"
                       : "text-white/90 hover:text-[#E8B84B]"
                   }`}
                 >
                   {link.label}
-                  {link.children && <ChevronDown className="w-3.5 h-3.5" />}
                 </Link>
 
+                {/* Invisible bridge fills gap so mouse moving into dropdown doesn't close it */}
+                {link.children && <div className="absolute top-full left-0 w-full h-2" />}
+
                 {link.children && activeDropdown === link.href && (
-                  <div className="absolute top-full left-0 mt-1 w-56 bg-[#3D0000] rounded-lg shadow-xl border border-white/10 py-1 z-50">
-                    {link.children.map((child) => (
-                      <Link
-                        key={child.href}
-                        href={child.href}
-                        className="block px-4 py-2.5 text-sm text-white/80 hover:text-[#E8B84B] hover:bg-white/5 transition-colors"
-                      >
-                        {child.label}
-                      </Link>
-                    ))}
+                  <div className="absolute top-full left-0 pt-2 w-56 z-50">
+                    <div className="bg-[#3D0000] rounded-lg shadow-xl border border-white/10 py-1">
+                      {link.children.map((child) => (
+                        <Link
+                          key={child.href}
+                          href={child.href}
+                          className="block px-4 py-2.5 text-sm text-white/80 hover:text-[#E8B84B] hover:bg-white/5 transition-colors"
+                        >
+                          {child.label}
+                        </Link>
+                      ))}
+                    </div>
                   </div>
                 )}
               </div>
