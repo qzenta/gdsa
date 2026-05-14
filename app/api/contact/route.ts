@@ -1,10 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
-import { Resend } from "resend";
+import { sendEmail } from "@/lib/email";
 import { SITE } from "@/lib/site";
-
-function getResend() {
-  return new Resend(process.env.RESEND_API_KEY ?? "placeholder");
-}
 
 export async function POST(req: NextRequest) {
   try {
@@ -14,10 +10,9 @@ export async function POST(req: NextRequest) {
       return NextResponse.json({ error: "Missing required fields" }, { status: 400 });
     }
 
-    const resend = getResend();
-    await resend.emails.send({
-      from: `GDSA Website <noreply@${SITE.domain}>`,
-      to: [SITE.email],
+    await sendEmail({
+      from: `GDSA Website <info@${SITE.domain}>`,
+      to: SITE.email,
       replyTo: email,
       subject: `[GDSA Contact] ${subject} — from ${name}`,
       html: `
@@ -40,11 +35,9 @@ export async function POST(req: NextRequest) {
       `,
     });
 
-    // Auto-reply to sender
-    const resend2 = getResend();
-    await resend2.emails.send({
-      from: `Ghana Diaspora SA <noreply@${SITE.domain}>`,
-      to: [email],
+    await sendEmail({
+      from: `Ghana Diaspora SA <info@${SITE.domain}>`,
+      to: email,
       subject: "We received your message — Ghana Diaspora SA",
       html: `
         <div style="font-family: sans-serif; max-width: 600px; margin: 0 auto;">
