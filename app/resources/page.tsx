@@ -103,8 +103,8 @@ export default function ResourcesPage() {
         label="Resource Centre"
         title="Everything You Need, in One Place."
         subtitle="Free guides, checklists, forms, and trusted external links for African migrants navigating life in South Africa."
-        image="https://images.unsplash.com/photo-1568493408622-c6d5b2dc4a20?w=1600&q=80"
-        imageAlt="Migrant accessing resources and information"
+        image="https://images.unsplash.com/photo-1568842383789-09bf9fced2b4?w=1600&q=80"
+        imageAlt="African migrant reviewing documents and legal resources"
       />
       <div className="border-t-[3px] border-[#C8960C]" />
 

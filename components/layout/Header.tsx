@@ -39,9 +39,6 @@ export default function Header() {
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-1.5 flex justify-between items-center">
           <span>Reg: {SITE.registration.number} | NPC</span>
           <div className="flex items-center gap-4">
-            <a href={`tel:${SITE.phone}`} className="hover:text-[#E8B84B] transition-colors">
-              {SITE.phone}
-            </a>
             <a href={`mailto:${SITE.email}`} className="hover:text-[#E8B84B] transition-colors">
               {SITE.email}
             </a>

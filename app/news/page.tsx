@@ -81,8 +81,8 @@ export default function NewsPage() {
         label="News & Advocacy"
         title="Stay Informed. Stay Empowered."
         subtitle="The latest immigration news, policy updates, migrant rights information, and community stories from GDSA."
-        image="https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=1600&q=80"
-        imageAlt="GDSA news and advocacy"
+        image="https://images.unsplash.com/photo-1469571486292-0ba58a3f068b?w=1600&q=80"
+        imageAlt="African community advocacy and rights awareness"
       />
       <div className="border-t-[3px] border-[#C8960C]" />
 

@@ -20,7 +20,9 @@ export default function ContactPage() {
       <PageHero
         label="Get In Touch"
         title="We Are Here to Help."
-        subtitle="Reach out to the GDSA team by phone, WhatsApp, email, or in person. We respond to all enquiries within 24 hours."
+        subtitle="Reach out to the GDSA team by WhatsApp, email, or in person. We respond to all enquiries within 24 hours."
+        image="https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?w=1600&q=80"
+        imageAlt="GDSA team ready to assist African migrants in South Africa"
       />
       <div className="border-t-[3px] border-[#C8960C]" />
 
@@ -53,17 +55,6 @@ export default function ContactPage() {
                   </div>
                 </div>
 
-                <div className="flex items-start gap-4 bg-white rounded-xl p-5 border border-[#EDE8E0]">
-                  <div className="w-10 h-10 rounded-lg bg-[#8B1A1A]/10 flex items-center justify-center shrink-0">
-                    <Phone className="w-5 h-5 text-[#8B1A1A]" />
-                  </div>
-                  <div>
-                    <h3 className="font-semibold text-[#1C1C1C] text-sm mb-1">Phone</h3>
-                    <a href={`tel:${SITE.phone}`} className="text-[#3A3A3A] text-sm hover:text-[#8B1A1A]">
-                      {SITE.phone}
-                    </a>
-                  </div>
-                </div>
 
                 <div className="flex items-start gap-4 bg-white rounded-xl p-5 border border-[#EDE8E0]">
                   <div className="w-10 h-10 rounded-lg bg-[#25D366]/10 flex items-center justify-center shrink-0">

@@ -6,20 +6,20 @@ import { ArrowRight, ChevronRight } from "lucide-react";
 
 const SLIDES = [
   {
-    image: "https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=1600&q=80",
-    alt: "African community members gathered together in Johannesburg",
+    image: "https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=1600&q=80",
+    alt: "African migrants and families seeking support and assistance",
     headline: "Every Migrant Deserves Dignity, Rights, and a Fair Start.",
     sub: "Ghana Diaspora SA supports over 2,400 Africans in South Africa with documentation, legal aid, community, and opportunity.",
   },
   {
-    image: "https://images.unsplash.com/photo-1573497161161-c3e73707e25c?w=1600&q=80",
-    alt: "African professionals in a community meeting and workshop",
+    image: "https://images.unsplash.com/photo-1531482615713-2afd69097998?w=1600&q=80",
+    alt: "Diverse African community members in a support session",
     headline: "Navigating South Africa is Easier When You Have Community.",
     sub: "From asylum permits to entrepreneurship, GDSA walks the journey with you every step of the way.",
   },
   {
-    image: "https://images.unsplash.com/photo-1605000797499-95a51c5269ae?w=1600&q=80",
-    alt: "Diverse African migrants in a support group session",
+    image: "https://images.unsplash.com/photo-1532629345422-7515f3d16bb6?w=1600&q=80",
+    alt: "Community volunteers helping African families in need",
     headline: "Building African Futures, One Family at a Time.",
     sub: "We advocate for migrant rights, connect communities, and create economic opportunities for Africans across Gauteng.",
   },

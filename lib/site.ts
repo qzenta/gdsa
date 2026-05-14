@@ -7,7 +7,7 @@ export const SITE = {
   url: "https://www.ghanadiasporasa.org",
   domain: "ghanadiasporasa.org",
   email: "info@ghanadiasporasa.org",
-  phone: "+27 11 867 2550",
+  phone: "",
   whatsapp: "+27 11 867 2550",
   address: {
     street: "42 Hennie Alberts Street",
@@ -271,8 +271,14 @@ export const NAV_LINKS = [
     ],
   },
   { label: "Resources", href: "/resources" },
-  { label: "News", href: "/news" },
-  { label: "Events", href: "/events" },
+  {
+    label: "Community",
+    href: "/news",
+    children: [
+      { label: "News & Advocacy", href: "/news" },
+      { label: "Upcoming Events", href: "/events" },
+    ],
+  },
   { label: "Partners", href: "/partners" },
   { label: "Contact", href: "/contact" },
 ];

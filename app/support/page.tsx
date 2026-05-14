@@ -26,8 +26,8 @@ export default function SupportPage() {
         label="Migrant Support Hub"
         title="Every Challenge Has a Path Through It."
         subtitle="GDSA provides trusted, community-driven support across every dimension of migrant life in South Africa — from day one to full integration."
-        image="https://images.unsplash.com/photo-1573497161161-c3e73707e25c?w=1600&q=80"
-        imageAlt="African community support session"
+        image="https://images.unsplash.com/photo-1576267423445-b2e0074d68a4?w=1600&q=80"
+        imageAlt="African migrants waiting for support and documentation assistance"
       />
       <div className="border-t-[3px] border-[#C8960C]" />
 
@@ -37,14 +37,16 @@ export default function SupportPage() {
           <div className="flex items-center gap-2 text-white text-sm">
             <AlertCircle className="w-4 h-4 text-[#E8B84B] shrink-0" />
             <span>
-              <strong>Emergency?</strong> Call or WhatsApp GDSA immediately:
+              <strong>Emergency?</strong> WhatsApp GDSA immediately for urgent support:
             </span>
           </div>
           <a
-            href={`tel:${SITE.phone}`}
+            href={`https://wa.me/${SITE.whatsapp.replace(/\D/g, "")}?text=${encodeURIComponent("URGENT: I need emergency migrant support assistance.")}`}
+            target="_blank"
+            rel="noopener noreferrer"
             className="flex items-center gap-2 px-4 py-2 bg-white text-[#8B1A1A] rounded-lg text-sm font-bold hover:bg-[#F7F4EF] transition-colors"
           >
-            <Phone className="w-3.5 h-3.5" /> {SITE.phone}
+            <Phone className="w-3.5 h-3.5" /> WhatsApp Us Now
           </a>
         </div>
       </div>
