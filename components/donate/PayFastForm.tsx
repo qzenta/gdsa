@@ -5,8 +5,10 @@ import { Heart } from "lucide-react";
 const PRESET_AMOUNTS = [100, 250, 500, 750, 1000];
 
 const PAYFAST_URL = "https://www.payfast.co.za/eng/process";
-const MERCHANT_ID = process.env.NEXT_PUBLIC_PAYFAST_MERCHANT_ID ?? "10000100";
-const MERCHANT_KEY = process.env.NEXT_PUBLIC_PAYFAST_MERCHANT_KEY ?? "46f0cd694581a";
+// These are set as NEXT_PUBLIC_* env vars in Vercel — baked in at build time.
+// If missing the form will be disabled below to prevent accidental test transactions.
+const MERCHANT_ID  = process.env.NEXT_PUBLIC_PAYFAST_MERCHANT_ID  ?? "";
+const MERCHANT_KEY = process.env.NEXT_PUBLIC_PAYFAST_MERCHANT_KEY ?? "";
 
 export default function PayFastForm() {
   const [selected, setSelected] = useState<number | "custom">(250);
@@ -21,12 +23,21 @@ export default function PayFastForm() {
       ? parseFloat(custom || "0")
       : selected;
 
-  const isValid = amount >= 10 && firstName.trim() && lastName.trim() && email.includes("@");
+  const credentialsReady = Boolean(MERCHANT_ID && MERCHANT_KEY);
+  const isValid = credentialsReady && amount >= 10 && firstName.trim() && lastName.trim() && email.includes("@");
 
   const itemName =
     frequency === "monthly"
       ? "Monthly Donation — Ghana Diaspora SA"
       : "Once-off Donation — Ghana Diaspora SA";
+
+  if (!credentialsReady) {
+    return (
+      <div className="py-8 text-center text-[#8B1A1A] text-sm font-medium">
+        Donation gateway is being configured. Please contact us directly to donate.
+      </div>
+    );
+  }
 
   return (
     <form
