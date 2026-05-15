@@ -50,18 +50,15 @@ export default function Header() {
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-2 shrink-0">
-            <div className="bg-white rounded-lg overflow-hidden flex items-center justify-center h-10 w-10">
-              <Image src="/logo.png" alt="Ghana Diaspora SA" width={40} height={40} className="object-contain w-full h-full" priority />
-            </div>
-            <div className="hidden sm:block">
-              <div className="font-display font-bold text-white text-base leading-tight">
-                Ghana Diaspora SA
-              </div>
-              <div className="text-[#E8B84B] text-[10px] tracking-widest uppercase">
-                Community · Advocacy · Empowerment
-              </div>
-            </div>
+          <Link href="/" className="flex items-center shrink-0">
+            <Image
+              src="/logo.png"
+              alt="Ghana Diaspora SA"
+              width={140}
+              height={56}
+              className="h-14 w-auto object-contain mix-blend-multiply"
+              priority
+            />
           </Link>
 
           {/* Desktop nav */}

@@ -21,13 +21,9 @@ export default function Footer() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
           {/* Brand */}
           <div className="lg:col-span-1">
-            <div className="flex items-center gap-3 mb-4">
-              <div className="bg-white rounded-lg overflow-hidden flex-shrink-0 h-12 w-12">
-                <Image src="/logo.png" alt="Ghana Diaspora SA" width={48} height={48} className="object-contain w-full h-full" />
-              </div>
-              <div>
-                <div className="font-display font-bold text-white text-base">Ghana Diaspora SA</div>
-                <div className="text-[#E8B84B] text-[10px] tracking-widest uppercase">Strength in Unity</div>
+            <div className="mb-4">
+              <div className="bg-white rounded-xl overflow-hidden inline-block p-1">
+                <Image src="/logo.png" alt="Ghana Diaspora SA" width={160} height={64} className="h-16 w-auto object-contain" />
               </div>
             </div>
             <p className="text-sm leading-relaxed mb-5">
