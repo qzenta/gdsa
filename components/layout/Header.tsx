@@ -51,14 +51,16 @@ export default function Header() {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <Link href="/" className="flex items-center shrink-0">
-            <Image
-              src="/logo.png"
-              alt="Ghana Diaspora SA"
-              width={140}
-              height={56}
-              className="h-14 w-auto object-contain mix-blend-multiply"
-              priority
-            />
+            <div className="bg-white rounded-xl overflow-hidden inline-block p-1">
+              <Image
+                src="/logo.png"
+                alt="Ghana Diaspora SA"
+                width={140}
+                height={56}
+                className="h-14 w-auto object-contain"
+                priority
+              />
+            </div>
           </Link>
 
           {/* Desktop nav */}
