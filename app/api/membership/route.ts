@@ -94,10 +94,6 @@ export async function POST(req: NextRequest) {
     });
   } catch (err) {
     console.error("[Membership API] Error:", err);
-    // Temporary: surface error detail for diagnosis — will be removed after fix
-    return NextResponse.json({
-      error: "Failed",
-      detail: err instanceof Error ? err.message : String(err),
-    }, { status: 500 });
+    return NextResponse.json({ error: "Failed" }, { status: 500 });
   }
 }

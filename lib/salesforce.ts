@@ -154,8 +154,9 @@ export async function upsertMemberContact(data: MemberPayload): Promise<Salesfor
 
 // ─── Guard ────────────────────────────────────────────────────────────────────
 
-/** Returns true only when all required Salesforce env vars are present. */
+/** Returns true only when Salesforce is explicitly enabled and all required env vars are present. */
 export function salesforceConfigured(): boolean {
+  if (process.env.SF_ENABLED !== "true") return false;
   return Boolean(
     process.env.SF_CLIENT_ID &&
     process.env.SF_CLIENT_SECRET &&
