@@ -12,8 +12,13 @@ export async function sendEmail(options: {
     (email) => ({ email })
   );
 
+  const fromMatch = options.from.match(/^(.+?)\s*<(.+?)>$/);
+  const sender = fromMatch
+    ? { name: fromMatch[1].trim(), email: fromMatch[2].trim() }
+    : { email: options.from };
+
   const body: Record<string, unknown> = {
-    sender: { email: options.from },
+    sender,
     to: toAddresses,
     subject: options.subject,
     htmlContent: options.html,
