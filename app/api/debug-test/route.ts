@@ -12,8 +12,7 @@ export async function GET() {
   const results: Record<string, unknown> = {
     timestamp: new Date().toISOString(),
     env: {
-      brevo_login_set:  Boolean(process.env.BREVO_SMTP_LOGIN),
-      brevo_key_set:    Boolean(process.env.BREVO_SMTP_KEY),
+      brevo_api_key_set: Boolean(process.env.BREVO_API_KEY),
       sf_configured:    salesforceConfigured(),
       sf_client_id_set: Boolean(process.env.SF_CLIENT_ID),
       sf_username_set:  Boolean(process.env.SF_USERNAME),
