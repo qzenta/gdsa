@@ -2,6 +2,7 @@ import { notFound } from "next/navigation";
 import Link from "next/link";
 import { ArrowLeft, Calendar, Clock } from "lucide-react";
 import AnimateIn from "@/components/shared/AnimateIn";
+import PageHero from "@/components/shared/PageHero";
 
 interface Props {
   params: Promise<{ slug: string }>;
@@ -74,31 +75,13 @@ export default async function NewsArticlePage({ params }: Props) {
 
   return (
     <div className="min-h-screen">
-      {/* Hero */}
-      <div className="bg-[#5C0000] pt-28 pb-16">
-        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-          <AnimateIn>
-            <span className="inline-block text-xs font-bold tracking-widest uppercase text-[#E8B84B] mb-4">
-              {post.category}
-            </span>
-            <h1 className="font-display text-3xl sm:text-4xl font-bold text-white leading-tight mb-5">
-              {post.title}
-            </h1>
-            <div className="flex flex-wrap items-center gap-4 text-white/60 text-sm">
-              <div className="flex items-center gap-1.5">
-                <Calendar className="w-3.5 h-3.5" />
-                {new Date(post.publishedAt).toLocaleDateString("en-ZA", { year: "numeric", month: "long", day: "numeric" })}
-              </div>
-              <div className="flex items-center gap-1.5">
-                <Clock className="w-3.5 h-3.5" />
-                {post.readTime}
-              </div>
-              <span className="text-white/40">|</span>
-              <span className="text-white/60 text-xs">Ghana Diaspora SA</span>
-            </div>
-          </AnimateIn>
-        </div>
-      </div>
+      <PageHero
+        label={post.category}
+        title={post.title}
+        subtitle={`${new Date(post.publishedAt).toLocaleDateString("en-ZA", { year: "numeric", month: "long", day: "numeric" })} · ${post.readTime} · Ghana Diaspora SA`}
+        image="https://images.unsplash.com/photo-1469571486292-0ba58a3f068b?w=1600&q=80"
+        imageAlt="GDSA news and advocacy"
+      />
       <div className="border-t-[3px] border-[#C8960C]" />
 
       {/* Content */}

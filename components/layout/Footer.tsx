@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { SITE, SUPPORT_SERVICES } from "@/lib/site";
 import { Mail, Phone, MapPin } from "lucide-react";
 
@@ -21,12 +22,12 @@ export default function Footer() {
           {/* Brand */}
           <div className="lg:col-span-1">
             <div className="flex items-center gap-3 mb-4">
-              <div className="w-10 h-10 rounded-full bg-[#C8960C] flex items-center justify-center font-display font-bold text-white text-sm">
-                GD
+              <div className="bg-white rounded-lg overflow-hidden flex-shrink-0 h-12 w-12">
+                <Image src="/logo.png" alt="Ghana Diaspora SA" width={48} height={48} className="object-contain w-full h-full" />
               </div>
               <div>
                 <div className="font-display font-bold text-white text-base">Ghana Diaspora SA</div>
-                <div className="text-[#E8B84B] text-[10px] tracking-widest uppercase">GDSA</div>
+                <div className="text-[#E8B84B] text-[10px] tracking-widest uppercase">Strength in Unity</div>
               </div>
             </div>
             <p className="text-sm leading-relaxed mb-5">

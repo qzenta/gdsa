@@ -1,6 +1,7 @@
 "use client";
 import { useState, useEffect } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { Menu, X, ChevronDown } from "lucide-react";
 import { NAV_LINKS, SITE } from "@/lib/site";
@@ -49,9 +50,9 @@ export default function Header() {
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-3 shrink-0">
-            <div className="w-10 h-10 rounded-full bg-[#C8960C] flex items-center justify-center font-display font-bold text-white text-sm">
-              GD
+          <Link href="/" className="flex items-center gap-2 shrink-0">
+            <div className="bg-white rounded-lg overflow-hidden flex items-center justify-center h-10 w-10">
+              <Image src="/logo.png" alt="Ghana Diaspora SA" width={40} height={40} className="object-contain w-full h-full" priority />
             </div>
             <div className="hidden sm:block">
               <div className="font-display font-bold text-white text-base leading-tight">
