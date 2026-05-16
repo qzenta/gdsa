@@ -55,6 +55,20 @@ const DOWNLOADS = [
     size: "290 KB",
     icon: FileText,
   },
+  {
+    title: "Xenophobia Safety & Response Guide",
+    desc: "What to do if you are targeted by xenophobic violence — reporting steps, legal recourse, and emergency shelter contacts.",
+    type: "PDF",
+    size: "310 KB",
+    icon: AlertCircle,
+  },
+  {
+    title: "SAPS Rights Guide for Migrants",
+    desc: "Know your rights during police interactions in South Africa. What officers can and cannot do, and how to file a complaint.",
+    type: "PDF",
+    size: "175 KB",
+    icon: FileText,
+  },
 ];
 
 const LINKS = [
@@ -109,14 +123,14 @@ export default function ResourcesPage() {
       <div className="border-t-[3px] border-[#C8960C]" />
 
       {/* Downloads */}
-      <section className="py-20 bg-[#F7F4EF]">
+      <section className="py-20 bg-[#2A2A2A]">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <AnimateIn className="mb-12">
             <span className="text-xs font-bold tracking-widest uppercase text-[#C8960C]">Free Downloads</span>
-            <h2 className="font-display text-3xl font-bold text-[#1C1C1C] mt-2 mb-2">
+            <h2 className="font-display text-3xl font-bold text-white mt-2 mb-2">
               Guides & Checklists
             </h2>
-            <p className="text-[#3A3A3A]">
+            <p className="text-white/60">
               Download and share these free resources with anyone who needs them.
             </p>
           </AnimateIn>
@@ -126,18 +140,18 @@ export default function ResourcesPage() {
               const Icon = d.icon;
               return (
                 <AnimateIn key={d.title} delay={i * 60}>
-                  <div className="bg-white rounded-xl p-6 border border-[#EDE8E0] shadow-sm hover:shadow-md transition-shadow h-full flex flex-col">
+                  <div className="bg-[#1C1C1C] rounded-xl p-6 border border-white/10 shadow-sm hover:shadow-lg hover:border-[#C8960C]/40 transition-all h-full flex flex-col">
                     <div className="flex items-start justify-between mb-3">
-                      <div className="w-10 h-10 rounded-lg bg-[#8B1A1A]/10 flex items-center justify-center">
-                        <Icon className="w-5 h-5 text-[#8B1A1A]" />
+                      <div className="w-10 h-10 rounded-lg bg-[#8B1A1A] flex items-center justify-center">
+                        <Icon className="w-5 h-5 text-white" />
                       </div>
-                      <span className="text-xs font-bold text-[#3A3A3A]/50 bg-[#F7F4EF] px-2 py-0.5 rounded">
+                      <span className="text-xs font-bold text-white/40 bg-white/10 px-2 py-0.5 rounded">
                         {d.type} • {d.size}
                       </span>
                     </div>
-                    <h3 className="font-semibold text-[#1C1C1C] text-sm mb-2 leading-snug">{d.title}</h3>
-                    <p className="text-[#3A3A3A] text-xs leading-relaxed flex-1 mb-4">{d.desc}</p>
-                    <button className="flex items-center gap-2 text-[#8B1A1A] text-sm font-semibold hover:underline">
+                    <h3 className="font-semibold text-white text-sm mb-2 leading-snug">{d.title}</h3>
+                    <p className="text-white/60 text-xs leading-relaxed flex-1 mb-4">{d.desc}</p>
+                    <button className="flex items-center gap-2 text-[#E8B84B] text-sm font-semibold hover:underline">
                       <Download className="w-3.5 h-3.5" /> Download (Coming Soon)
                     </button>
                   </div>

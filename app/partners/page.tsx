@@ -60,7 +60,7 @@ const IMPLEMENTING_PARTNERS = [
     url: "https://www.sahrc.org.za",
     logo: "HC",
     color: "bg-[#C8960C]",
-    photo: "https://images.unsplash.com/photo-1573497620053-ea5300f94f21?w=80&h=80&fit=crop&q=80",
+    photo: "https://images.unsplash.com/photo-1523824921871-d6f1a15151f1?w=80&h=80&fit=crop&q=80",
     photoAlt: "Human rights advocate",
   },
   {

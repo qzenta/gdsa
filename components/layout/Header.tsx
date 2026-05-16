@@ -36,11 +36,11 @@ export default function Header() {
       }`}
     >
       {/* Top bar */}
-      <div className="bg-[#F7F4EF] text-[#3A3A3A]/60 text-xs hidden md:block border-b border-[#EDE8E0]">
+      <div className="bg-[#8B1A1A] text-white/80 text-xs hidden md:block">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-1.5 flex justify-between items-center">
           <span>Reg: {SITE.registration.number} | NPC</span>
           <div className="flex items-center gap-4">
-            <a href={`mailto:${SITE.email}`} className="hover:text-[#8B1A1A] transition-colors">
+            <a href={`mailto:${SITE.email}`} className="hover:text-[#E8B84B] transition-colors">
               {SITE.email}
             </a>
           </div>
@@ -51,14 +51,16 @@ export default function Header() {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <Link href="/" className="flex items-center shrink-0">
-            <Image
-              src="/logo.png"
-              alt="Ghana Diaspora SA"
-              width={140}
-              height={56}
-              className="h-14 w-auto object-contain"
-              priority
-            />
+            <div className="bg-white rounded-xl overflow-hidden inline-block p-1 shadow-sm ring-1 ring-[#EDE8E0]">
+              <Image
+                src="/logo.png"
+                alt="Ghana Diaspora SA"
+                width={140}
+                height={56}
+                className="h-14 w-auto object-contain"
+                priority
+              />
+            </div>
           </Link>
 
           {/* Desktop nav */}
@@ -125,24 +127,24 @@ export default function Header() {
         {/* Mobile menu */}
         {open && (
           <nav
-            className="lg:hidden max-h-[calc(100vh-4rem)] overflow-y-auto pb-4 border-t border-[#EDE8E0]"
+            className="lg:hidden max-h-[calc(100vh-4rem)] overflow-y-auto pb-4 bg-[#5C0000] border-t border-white/10"
             aria-label="Mobile navigation"
           >
             {NAV_LINKS.map((link) => (
               <div key={link.href}>
                 {link.children ? (
                   <>
-                    <div className="flex items-center justify-between border-b border-[#F7F4EF]">
+                    <div className="flex items-center justify-between border-b border-white/10">
                       <Link
                         href={link.href}
-                        className={`flex-1 px-2 py-3 text-sm font-medium ${
-                          isActive(link.href) ? "text-[#8B1A1A]" : "text-[#1C1C1C]"
+                        className={`flex-1 px-4 py-3 text-sm font-medium ${
+                          isActive(link.href) ? "text-[#E8B84B]" : "text-white/90"
                         }`}
                       >
                         {link.label}
                       </Link>
                       <button
-                        className="px-3 py-3 text-[#3A3A3A]"
+                        className="px-4 py-3 text-white/60"
                         onClick={() =>
                           setMobileExpanded(
                             mobileExpanded === link.href ? null : link.href
@@ -156,12 +158,12 @@ export default function Header() {
                       </button>
                     </div>
                     {mobileExpanded === link.href && (
-                      <div className="pl-4 pb-2 space-y-1 bg-[#F7F4EF]">
+                      <div className="pl-6 pb-2 space-y-1 bg-[#3D0000]">
                         {link.children.map((child) => (
                           <Link
                             key={child.href}
                             href={child.href}
-                            className="block py-2 text-sm text-[#3A3A3A] hover:text-[#8B1A1A]"
+                            className="block py-2 text-sm text-white/70 hover:text-[#E8B84B]"
                           >
                             {child.label}
                           </Link>
@@ -172,8 +174,8 @@ export default function Header() {
                 ) : (
                   <Link
                     href={link.href}
-                    className={`block px-2 py-3 text-sm font-medium border-b border-[#F7F4EF] ${
-                      isActive(link.href) ? "text-[#8B1A1A]" : "text-[#1C1C1C]"
+                    className={`block px-4 py-3 text-sm font-medium border-b border-white/10 ${
+                      isActive(link.href) ? "text-[#E8B84B]" : "text-white/90"
                     }`}
                   >
                     {link.label}
@@ -181,10 +183,10 @@ export default function Header() {
                 )}
               </div>
             ))}
-            <div className="pt-3 border-t border-[#EDE8E0] mt-2">
+            <div className="pt-3 px-4 border-t border-white/10 mt-2">
               <Link
                 href="/donate"
-                className="block text-center py-3 bg-[#C8960C] text-white text-sm font-semibold rounded-lg"
+                className="block text-center py-3 bg-[#C8960C] text-white text-sm font-semibold rounded-lg hover:bg-[#E8B84B] transition-colors"
               >
                 Donate Now
               </Link>

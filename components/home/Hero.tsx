@@ -12,8 +12,8 @@ const SLIDES = [
     sub: "Ghana Diaspora SA supports over 2,400 Africans in South Africa with documentation, legal aid, community, and opportunity.",
   },
   {
-    image: "https://images.unsplash.com/photo-1531482615713-2afd69097998?w=1600&q=80",
-    alt: "Diverse African community members in a support session",
+    image: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=1600&q=80",
+    alt: "African community member confident and empowered in South Africa",
     headline: "Navigating South Africa is Easier When You Have Community.",
     sub: "From asylum permits to entrepreneurship, GDSA walks the journey with you every step of the way.",
   },

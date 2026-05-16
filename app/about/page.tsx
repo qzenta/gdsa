@@ -3,7 +3,7 @@ import PageHero from "@/components/shared/PageHero";
 import AnimateIn from "@/components/shared/AnimateIn";
 import { buildMetadata, buildFAQSchema } from "@/lib/metadata";
 import { SITE } from "@/lib/site";
-import { CheckCircle, Target, Eye, Heart } from "lucide-react";
+import { CheckCircle, Target, Eye, Heart, Handshake } from "lucide-react";
 import Link from "next/link";
 
 export const metadata: Metadata = buildMetadata({
@@ -142,7 +142,7 @@ export default function AboutPage() {
             </h2>
           </AnimateIn>
 
-          <div className="grid md:grid-cols-2 gap-6 mb-16">
+          <div className="grid md:grid-cols-3 gap-6 mb-16">
             <AnimateIn>
               <div className="group bg-[#8B1A1A] rounded-xl p-8 text-white h-full transition-all duration-300 hover:scale-[1.02] hover:shadow-2xl hover:bg-[#a01f1f] cursor-default">
                 <Target className="w-8 h-8 text-[#E8B84B] mb-4 transition-transform duration-300 group-hover:scale-110 group-hover:rotate-12" />
@@ -163,6 +163,18 @@ export default function AboutPage() {
                   A South Africa where African migrants are fully integrated, legally protected,
                   economically empowered, and socially valued — where the Pan-African community
                   thrives as a contributor to this nation&apos;s growth, culture, and future.
+                </p>
+              </div>
+            </AnimateIn>
+            <AnimateIn delay={160}>
+              <div className="group bg-[#1E5631] rounded-xl p-8 text-white h-full transition-all duration-300 hover:scale-[1.02] hover:shadow-2xl hover:bg-[#265c3a] cursor-default">
+                <Handshake className="w-8 h-8 text-[#E8B84B] mb-4 transition-transform duration-300 group-hover:scale-110 group-hover:rotate-6" />
+                <h3 className="font-display text-xl font-bold mb-3 group-hover:text-[#E8B84B] transition-colors duration-300">Our Promise</h3>
+                <p className="text-white/80 leading-relaxed group-hover:text-white transition-colors duration-300">
+                  No GDSA member faces a challenge alone. We commit to being present at every
+                  critical moment — from the day you arrive to the day you thrive — providing
+                  honest guidance, practical support, and an unbreakable sense of community
+                  rooted in the Ubuntu spirit.
                 </p>
               </div>
             </AnimateIn>
