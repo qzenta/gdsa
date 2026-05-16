@@ -21,7 +21,7 @@ export default function ContactPage() {
         label="Get In Touch"
         title="We Are Here to Help."
         subtitle="Reach out to the GDSA team by WhatsApp, email, or in person. We respond to all enquiries within 24 hours."
-        image="https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?w=1600&q=80"
+        image="https://images.unsplash.com/photo-1522529599102-193c0d76b5b6?w=1600&q=80"
         imageAlt="GDSA team ready to assist African migrants in South Africa"
       />
       <div className="border-t-[3px] border-[#C8960C]" />

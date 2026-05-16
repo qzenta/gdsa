@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import PageHero from "@/components/shared/PageHero";
 import AnimateIn from "@/components/shared/AnimateIn";
 import { buildMetadata } from "@/lib/metadata";
@@ -23,6 +24,8 @@ const IMPLEMENTING_PARTNERS = [
     url: "https://lhr.org.za",
     logo: "LHR",
     color: "bg-[#8B1A1A]",
+    photo: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=80&h=80&fit=crop&q=80",
+    photoAlt: "Legal advocate",
   },
   {
     name: "Legal Aid South Africa",
@@ -33,6 +36,8 @@ const IMPLEMENTING_PARTNERS = [
     url: "https://legal-aid.co.za",
     logo: "LA",
     color: "bg-[#1E5631]",
+    photo: "https://images.unsplash.com/photo-1531123897727-8f129e1688ce?w=80&h=80&fit=crop&q=80",
+    photoAlt: "Legal aid professional",
   },
   {
     name: "UNHCR South Africa",
@@ -43,6 +48,8 @@ const IMPLEMENTING_PARTNERS = [
     url: "https://www.unhcr.org/countries/south-africa",
     logo: "UN",
     color: "bg-[#4B9CD3]",
+    photo: "https://images.unsplash.com/photo-1522529599102-193c0d76b5b6?w=80&h=80&fit=crop&q=80",
+    photoAlt: "Humanitarian worker",
   },
   {
     name: "SA Human Rights Commission",
@@ -53,6 +60,8 @@ const IMPLEMENTING_PARTNERS = [
     url: "https://www.sahrc.org.za",
     logo: "HC",
     color: "bg-[#C8960C]",
+    photo: "https://images.unsplash.com/photo-1573497620053-ea5300f94f21?w=80&h=80&fit=crop&q=80",
+    photoAlt: "Human rights advocate",
   },
   {
     name: "Scalabrini Centre",
@@ -63,6 +72,8 @@ const IMPLEMENTING_PARTNERS = [
     url: "https://www.scalabrini.org.za",
     logo: "SC",
     color: "bg-[#5C4033]",
+    photo: "https://images.unsplash.com/photo-1542909168-82c3e7fdca5c?w=80&h=80&fit=crop&q=80",
+    photoAlt: "Social services professional",
   },
   {
     name: "African Diaspora Forum",
@@ -73,6 +84,8 @@ const IMPLEMENTING_PARTNERS = [
     url: "https://www.adf.org.za",
     logo: "AD",
     color: "bg-[#2C3E50]",
+    photo: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=80&h=80&fit=crop&q=80",
+    photoAlt: "Diaspora advocate",
   },
 ];
 
@@ -124,8 +137,8 @@ export default function PartnersPage() {
         label="Partnerships"
         title="Stronger Together for African Migrants."
         subtitle="We do not work alone. GDSA's impact is multiplied through strategic partnerships with legal, humanitarian, government, and corporate organisations that share our values."
-        image="https://images.unsplash.com/photo-1589156229687-496a31ad1d1f?w=1600&q=80"
-        imageAlt="GDSA community partnerships working together for African migrants"
+        image="https://images.unsplash.com/photo-1521038199265-bc482db0f923?w=1600&q=80"
+        imageAlt="African partners and community leaders working together"
       />
       <div className="border-t-[3px] border-[#C8960C]" />
 
@@ -157,7 +170,7 @@ export default function PartnersPage() {
                     >
                       {partner.logo}
                     </div>
-                    <div>
+                    <div className="flex-1 min-w-0">
                       <span className="text-xs font-semibold uppercase tracking-wide text-[#C8960C]">
                         {partner.category}
                       </span>
@@ -165,6 +178,13 @@ export default function PartnersPage() {
                         {partner.name}
                       </h3>
                     </div>
+                    <Image
+                      src={partner.photo}
+                      alt={partner.photoAlt}
+                      width={40}
+                      height={40}
+                      className="w-10 h-10 rounded-full object-cover border-2 border-[#EDE8E0] shrink-0"
+                    />
                   </div>
                   <p className="text-[#3A3A3A] text-sm leading-relaxed flex-1 mb-4">
                     {partner.description}

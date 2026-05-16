@@ -77,8 +77,8 @@ export default function MembershipPage() {
         label="Join GDSA"
         title="Be Part of Something Greater."
         subtitle="Membership is your formal connection to the GDSA community — your voice in our governance, and your access to everything we offer."
-        image="https://images.unsplash.com/photo-1573921470445-8d99e2e21f4d?w=1600&q=80"
-        imageAlt="Diverse African community members joining together for support"
+        image="https://images.unsplash.com/photo-1531123897727-8f129e1688ce?w=1600&q=80"
+        imageAlt="African community members joining together in solidarity"
       />
       <div className="border-t-[3px] border-[#C8960C]" />
 

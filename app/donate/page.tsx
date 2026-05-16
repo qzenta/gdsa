@@ -28,8 +28,8 @@ export default function DonatePage() {
         label="Make a Difference"
         title="Every Rand You Give Protects a Life."
         subtitle="Ghana Diaspora SA is 100% community-funded. Your donation directly supports African migrants facing some of the most challenging moments of their lives."
-        image="https://images.unsplash.com/photo-1578357078586-491adf1aa5ba?w=1600&q=80"
-        imageAlt="African families and individuals benefiting from community support"
+        image="https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?w=1600&q=80"
+        imageAlt="African community members supported by donations and giving"
       />
       <div className="border-t-[3px] border-[#C8960C]" />
 

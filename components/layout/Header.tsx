@@ -31,16 +31,16 @@ export default function Header() {
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         scrolled || open
-          ? "bg-[#5C0000] shadow-lg"
-          : "bg-[#5C0000]/95 backdrop-blur-sm"
+          ? "bg-white shadow-md border-b border-[#EDE8E0]"
+          : "bg-white/95 backdrop-blur-sm border-b border-[#EDE8E0]"
       }`}
     >
       {/* Top bar */}
-      <div className="bg-[#3D0000] text-white/70 text-xs hidden md:block">
+      <div className="bg-[#F7F4EF] text-[#3A3A3A]/60 text-xs hidden md:block border-b border-[#EDE8E0]">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-1.5 flex justify-between items-center">
           <span>Reg: {SITE.registration.number} | NPC</span>
           <div className="flex items-center gap-4">
-            <a href={`mailto:${SITE.email}`} className="hover:text-[#E8B84B] transition-colors">
+            <a href={`mailto:${SITE.email}`} className="hover:text-[#8B1A1A] transition-colors">
               {SITE.email}
             </a>
           </div>
@@ -51,16 +51,14 @@ export default function Header() {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <Link href="/" className="flex items-center shrink-0">
-            <div className="bg-white rounded-xl overflow-hidden inline-block p-1">
-              <Image
-                src="/logo.png"
-                alt="Ghana Diaspora SA"
-                width={140}
-                height={56}
-                className="h-14 w-auto object-contain"
-                priority
-              />
-            </div>
+            <Image
+              src="/logo.png"
+              alt="Ghana Diaspora SA"
+              width={140}
+              height={56}
+              className="h-14 w-auto object-contain"
+              priority
+            />
           </Link>
 
           {/* Desktop nav */}
@@ -76,8 +74,8 @@ export default function Header() {
                   href={link.href}
                   className={`flex items-center whitespace-nowrap px-3 py-2 text-sm font-medium rounded transition-colors ${
                     isActive(link.href)
-                      ? "text-[#E8B84B]"
-                      : "text-white/90 hover:text-[#E8B84B]"
+                      ? "text-[#8B1A1A]"
+                      : "text-[#1C1C1C]/75 hover:text-[#8B1A1A]"
                   }`}
                 >
                   {link.label}
@@ -88,12 +86,12 @@ export default function Header() {
 
                 {link.children && activeDropdown === link.href && (
                   <div className="absolute top-full left-0 pt-2 w-56 z-50">
-                    <div className="bg-[#3D0000] rounded-lg shadow-xl border border-white/10 py-1">
+                    <div className="bg-white rounded-lg shadow-xl border border-[#EDE8E0] py-1">
                       {link.children.map((child) => (
                         <Link
                           key={child.href}
                           href={child.href}
-                          className="block px-4 py-2.5 text-sm text-white/80 hover:text-[#E8B84B] hover:bg-white/5 transition-colors"
+                          className="block px-4 py-2.5 text-sm text-[#3A3A3A] hover:text-[#8B1A1A] hover:bg-[#F7F4EF] transition-colors"
                         >
                           {child.label}
                         </Link>
@@ -114,7 +112,7 @@ export default function Header() {
               Donate
             </Link>
             <button
-              className="lg:hidden p-2 text-white"
+              className="lg:hidden p-2 text-[#1C1C1C]"
               onClick={() => setOpen(!open)}
               aria-label="Toggle mobile menu"
               aria-expanded={open}
@@ -127,33 +125,43 @@ export default function Header() {
         {/* Mobile menu */}
         {open && (
           <nav
-            className="lg:hidden max-h-[calc(100vh-4rem)] overflow-y-auto pb-4 border-t border-white/10"
+            className="lg:hidden max-h-[calc(100vh-4rem)] overflow-y-auto pb-4 border-t border-[#EDE8E0]"
             aria-label="Mobile navigation"
           >
             {NAV_LINKS.map((link) => (
               <div key={link.href}>
                 {link.children ? (
                   <>
-                    <button
-                      className="flex items-center justify-between w-full px-2 py-3 text-white/90 font-medium text-sm"
-                      onClick={() =>
-                        setMobileExpanded(
-                          mobileExpanded === link.href ? null : link.href
-                        )
-                      }
-                    >
-                      {link.label}
-                      <ChevronDown
-                        className={`w-4 h-4 transition-transform ${mobileExpanded === link.href ? "rotate-180" : ""}`}
-                      />
-                    </button>
+                    <div className="flex items-center justify-between border-b border-[#F7F4EF]">
+                      <Link
+                        href={link.href}
+                        className={`flex-1 px-2 py-3 text-sm font-medium ${
+                          isActive(link.href) ? "text-[#8B1A1A]" : "text-[#1C1C1C]"
+                        }`}
+                      >
+                        {link.label}
+                      </Link>
+                      <button
+                        className="px-3 py-3 text-[#3A3A3A]"
+                        onClick={() =>
+                          setMobileExpanded(
+                            mobileExpanded === link.href ? null : link.href
+                          )
+                        }
+                        aria-label={`Toggle ${link.label} submenu`}
+                      >
+                        <ChevronDown
+                          className={`w-4 h-4 transition-transform ${mobileExpanded === link.href ? "rotate-180" : ""}`}
+                        />
+                      </button>
+                    </div>
                     {mobileExpanded === link.href && (
-                      <div className="pl-4 pb-2 space-y-1">
+                      <div className="pl-4 pb-2 space-y-1 bg-[#F7F4EF]">
                         {link.children.map((child) => (
                           <Link
                             key={child.href}
                             href={child.href}
-                            className="block py-2 text-sm text-white/70 hover:text-[#E8B84B]"
+                            className="block py-2 text-sm text-[#3A3A3A] hover:text-[#8B1A1A]"
                           >
                             {child.label}
                           </Link>
@@ -164,8 +172,8 @@ export default function Header() {
                 ) : (
                   <Link
                     href={link.href}
-                    className={`block px-2 py-3 text-sm font-medium ${
-                      isActive(link.href) ? "text-[#E8B84B]" : "text-white/90"
+                    className={`block px-2 py-3 text-sm font-medium border-b border-[#F7F4EF] ${
+                      isActive(link.href) ? "text-[#8B1A1A]" : "text-[#1C1C1C]"
                     }`}
                   >
                     {link.label}
@@ -173,7 +181,7 @@ export default function Header() {
                 )}
               </div>
             ))}
-            <div className="pt-3 border-t border-white/10 mt-2">
+            <div className="pt-3 border-t border-[#EDE8E0] mt-2">
               <Link
                 href="/donate"
                 className="block text-center py-3 bg-[#C8960C] text-white text-sm font-semibold rounded-lg"

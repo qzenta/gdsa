@@ -70,21 +70,21 @@ export default function DonorPopup() {
       role="status"
       aria-live="polite"
     >
-      <div className="bg-white rounded-xl shadow-lg border border-[#EDE8E0] px-3 py-2.5 flex items-start gap-2">
-        <div className="w-7 h-7 rounded-full bg-[#8B1A1A]/10 flex items-center justify-center shrink-0 mt-0.5">
-          <Heart className="w-3 h-3 text-[#8B1A1A] fill-[#8B1A1A]" />
+      <div className="bg-gray-900/75 backdrop-blur-md rounded-xl border border-white/10 px-3 py-2.5 flex items-start gap-2">
+        <div className="w-7 h-7 rounded-full bg-white/20 flex items-center justify-center shrink-0 mt-0.5">
+          <Heart className="w-3 h-3 text-white fill-white" />
         </div>
         <div className="flex-1 min-w-0">
-          <p className="text-xs font-semibold text-[#1C1C1C] leading-snug">
+          <p className="text-xs font-semibold text-white leading-snug">
             {current.name} · {current.location}
           </p>
-          <p className="text-xs text-[#3A3A3A]">
-            donated <span className="font-bold text-[#8B1A1A]">{current.amount}</span>
+          <p className="text-xs text-white/75">
+            donated <span className="font-bold text-[#E8B84B]">{current.amount}</span>
           </p>
-          <p className="text-[10px] text-[#3A3A3A]/40 mt-0.5">{current.timeAgo}</p>
+          <p className="text-[10px] text-white/40 mt-0.5">{current.timeAgo}</p>
           <Link
             href="/donate"
-            className="inline-block mt-1 text-[10px] font-semibold text-[#C8960C] hover:underline"
+            className="inline-block mt-1 text-[10px] font-semibold text-[#E8B84B] hover:underline"
           >
             Donate too →
           </Link>
@@ -92,7 +92,7 @@ export default function DonorPopup() {
         <button
           onClick={() => { setVisible(false); setDismissed(true); }}
           aria-label="Dismiss notification"
-          className="text-[#3A3A3A]/40 hover:text-[#3A3A3A] transition-colors shrink-0"
+          className="text-white/40 hover:text-white transition-colors shrink-0"
         >
           <X className="w-3 h-3" />
         </button>

@@ -26,8 +26,8 @@ export default function SupportPage() {
         label="Migrant Support Hub"
         title="Every Challenge Has a Path Through It."
         subtitle="GDSA provides trusted, community-driven support across every dimension of migrant life in South Africa — from day one to full integration."
-        image="https://images.unsplash.com/photo-1576267423445-b2e0074d68a4?w=1600&q=80"
-        imageAlt="African migrants waiting for support and documentation assistance"
+        image="https://images.unsplash.com/photo-1593113598332-cd288d649433?w=1600&q=80"
+        imageAlt="African community volunteers providing migrant support and assistance"
       />
       <div className="border-t-[3px] border-[#C8960C]" />
 
