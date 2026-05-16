@@ -65,7 +65,7 @@ export default function AboutPage() {
         label="About GDSA"
         title="Built by the Community, for the Community."
         subtitle="Ghana Diaspora SA was founded in 2020 with one vision: that no African migrant in South Africa should face the challenges of documentation, discrimination, or isolation alone."
-        image="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=1600&q=80"
+        image="/images/hero-about.jpg"
         imageAlt="African community members gathered together"
       />
 
