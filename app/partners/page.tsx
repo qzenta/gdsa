@@ -137,7 +137,7 @@ export default function PartnersPage() {
         label="Partnerships"
         title="Stronger Together for African Migrants."
         subtitle="We do not work alone. GDSA's impact is multiplied through strategic partnerships with legal, humanitarian, government, and corporate organisations that share our values."
-        image="https://images.unsplash.com/photo-1521038199265-bc482db0f923?w=1600&q=80"
+        image="/images/hero-partners.jpg"
         imageAlt="African partners and community leaders working together"
       />
       <div className="border-t-[3px] border-[#C8960C]" />
