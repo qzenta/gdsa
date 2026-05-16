@@ -143,37 +143,41 @@ export default function AboutPage() {
 
           <div className="grid md:grid-cols-3 gap-6 mb-16">
             <AnimateIn>
-              <div className="group bg-[#8B1A1A] rounded-xl p-8 text-white h-full transition-all duration-300 hover:scale-[1.02] hover:shadow-2xl hover:bg-[#a01f1f] cursor-default">
-                <Target className="w-8 h-8 text-[#E8B84B] mb-4 transition-transform duration-300 group-hover:scale-110 group-hover:rotate-12" />
-                <h3 className="font-display text-xl font-bold mb-3 group-hover:text-[#E8B84B] transition-colors duration-300">Our Mission</h3>
-                <p className="text-white/80 leading-relaxed group-hover:text-white transition-colors duration-300">
-                  To empower African migrants in South Africa through community-driven support,
-                  legal awareness, and documentation assistance. For Ghanaians specifically, this
-                  means ensuring every diaspora member can access the same rights, services, and
-                  opportunities enjoyed by Ghanaians at home — starting with the Ghana Card.
+              <div className="bg-[#8B1A1A]/8 rounded-xl p-8 h-full border border-[#8B1A1A]/15 hover:shadow-md transition-shadow cursor-default">
+                <div className="w-10 h-10 rounded-lg bg-[#8B1A1A]/15 flex items-center justify-center mb-4">
+                  <Target className="w-5 h-5 text-[#8B1A1A]" />
+                </div>
+                <h3 className="font-display text-xl font-bold text-[#1C1C1C] mb-3">Our Mission</h3>
+                <p className="text-[#3A3A3A] leading-relaxed">
+                  To support African migrants in South Africa through community-driven legal awareness,
+                  documentation assistance, and advocacy. For Ghanaians, this means ensuring every
+                  diaspora member can access the same rights and opportunities enjoyed by Ghanaians at home.
                 </p>
               </div>
             </AnimateIn>
             <AnimateIn delay={80}>
-              <div className="group bg-[#1C1C1C] rounded-xl p-8 text-white h-full transition-all duration-300 hover:scale-[1.02] hover:shadow-2xl hover:bg-[#2a2a2a] cursor-default">
-                <Eye className="w-8 h-8 text-[#C8960C] mb-4 transition-transform duration-300 group-hover:scale-110 group-hover:-rotate-12" />
-                <h3 className="font-display text-xl font-bold mb-3 group-hover:text-[#C8960C] transition-colors duration-300">Our Vision</h3>
-                <p className="text-white/80 leading-relaxed group-hover:text-white transition-colors duration-300">
+              <div className="bg-[#8B1A1A]/8 rounded-xl p-8 h-full border border-[#8B1A1A]/15 hover:shadow-md transition-shadow cursor-default">
+                <div className="w-10 h-10 rounded-lg bg-[#8B1A1A]/15 flex items-center justify-center mb-4">
+                  <Eye className="w-5 h-5 text-[#8B1A1A]" />
+                </div>
+                <h3 className="font-display text-xl font-bold text-[#1C1C1C] mb-3">Our Vision</h3>
+                <p className="text-[#3A3A3A] leading-relaxed">
                   A South Africa where African migrants are fully integrated, legally protected,
-                  economically empowered, and socially valued — where the Pan-African community
-                  thrives as a contributor to this nation&apos;s growth, culture, and future.
+                  and economically empowered — where the Pan-African community contributes to
+                  this nation&apos;s growth, culture, and future with dignity.
                 </p>
               </div>
             </AnimateIn>
             <AnimateIn delay={160}>
-              <div className="group bg-[#1E5631] rounded-xl p-8 text-white h-full transition-all duration-300 hover:scale-[1.02] hover:shadow-2xl hover:bg-[#265c3a] cursor-default">
-                <Handshake className="w-8 h-8 text-[#E8B84B] mb-4 transition-transform duration-300 group-hover:scale-110 group-hover:rotate-6" />
-                <h3 className="font-display text-xl font-bold mb-3 group-hover:text-[#E8B84B] transition-colors duration-300">Our Promise</h3>
-                <p className="text-white/80 leading-relaxed group-hover:text-white transition-colors duration-300">
+              <div className="bg-[#8B1A1A]/8 rounded-xl p-8 h-full border border-[#8B1A1A]/15 hover:shadow-md transition-shadow cursor-default">
+                <div className="w-10 h-10 rounded-lg bg-[#8B1A1A]/15 flex items-center justify-center mb-4">
+                  <Handshake className="w-5 h-5 text-[#8B1A1A]" />
+                </div>
+                <h3 className="font-display text-xl font-bold text-[#1C1C1C] mb-3">Our Promise</h3>
+                <p className="text-[#3A3A3A] leading-relaxed">
                   No GDSA member faces a challenge alone. We commit to being present at every
-                  critical moment — from the day you arrive to the day you thrive — providing
-                  honest guidance, practical support, and an unbreakable sense of community
-                  rooted in the Ubuntu spirit.
+                  critical moment — from the day you arrive to the day you feel at home — with
+                  honest guidance, practical support, and an unbreakable sense of community.
                 </p>
               </div>
             </AnimateIn>
