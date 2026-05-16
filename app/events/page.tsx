@@ -74,7 +74,7 @@ export default function EventsPage() {
         label="Events"
         title="Connect. Learn. Build Community."
         subtitle="GDSA hosts regular community meetings, legal workshops, webinars, and networking events across Gauteng."
-        image="https://images.unsplash.com/photo-1543269865-cbf427effbad?w=1600&q=80"
+        image="/images/hero-events.jpg"
         imageAlt="African community gathering and events"
       />
       <div className="border-t-[3px] border-[#C8960C]" />
