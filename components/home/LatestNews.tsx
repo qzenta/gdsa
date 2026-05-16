@@ -1,38 +1,12 @@
 import Link from "next/link";
+import Image from "next/image";
 import { ArrowRight, Calendar } from "lucide-react";
 import AnimateIn from "@/components/shared/AnimateIn";
-
-const PLACEHOLDER_POSTS = [
-  {
-    slug: "south-africa-asylum-process-2025-guide",
-    title: "Your Complete Guide to the South African Asylum Process in 2025",
-    description:
-      "Step-by-step walkthrough of the asylum seeker permit application process at DHA offices across Gauteng.",
-    category: "Immigration Updates",
-    publishedAt: "2025-05-01",
-    readTime: "8 min read",
-  },
-  {
-    slug: "zep-holders-rights-south-africa",
-    title: "What ZEP Holders Need to Know About Their Rights in South Africa",
-    description:
-      "Understanding your legal status, rights, and options as a Zimbabwe Exemption Permit holder.",
-    category: "Migrant Rights",
-    publishedAt: "2025-04-18",
-    readTime: "6 min read",
-  },
-  {
-    slug: "starting-a-business-in-south-africa-as-a-migrant",
-    title: "How African Migrants Can Register and Grow a Business in South Africa",
-    description:
-      "CIPC registration, business permits, banking, and funding options for migrant entrepreneurs.",
-    category: "Entrepreneurship",
-    publishedAt: "2025-04-05",
-    readTime: "10 min read",
-  },
-];
+import { getLatestPosts } from "@/lib/blog";
 
 export default function LatestNews() {
+  const posts = getLatestPosts(3);
+
   return (
     <section className="py-20 bg-[#F7F4EF]">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -54,21 +28,41 @@ export default function LatestNews() {
         </AnimateIn>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          {PLACEHOLDER_POSTS.map((post, i) => (
+          {posts.map((post, i) => (
             <AnimateIn key={post.slug} delay={i * 80}>
               <Link
                 href={`/news/${post.slug}`}
                 className="group flex flex-col h-full bg-white rounded-xl overflow-hidden border border-[#EDE8E0] shadow-sm hover:shadow-md transition-all duration-200"
               >
-                <div className="h-44 bg-gradient-to-br from-[#8B1A1A] to-[#5C0000] flex items-center justify-center">
-                  <span className="text-[#E8B84B] text-xs font-bold tracking-widest uppercase">
-                    {post.category}
-                  </span>
+                <div className="relative h-44">
+                  {post.featuredImage ? (
+                    <Image
+                      src={post.featuredImage}
+                      alt={post.title}
+                      fill
+                      className="object-cover"
+                      sizes="(max-width: 768px) 100vw, 33vw"
+                    />
+                  ) : (
+                    <div className="absolute inset-0 bg-gradient-to-br from-[#8B1A1A] to-[#5C0000]" />
+                  )}
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/10 to-transparent" />
+                  <div className="absolute bottom-0 left-0 p-4">
+                    <span className="text-[#E8B84B] text-xs font-bold tracking-widest uppercase">
+                      {post.category}
+                    </span>
+                  </div>
                 </div>
                 <div className="p-6 flex flex-col flex-1">
                   <div className="flex items-center gap-2 text-[#3A3A3A]/60 text-xs mb-3">
                     <Calendar className="w-3.5 h-3.5" />
-                    <span>{new Date(post.publishedAt).toLocaleDateString("en-ZA", { year: "numeric", month: "long", day: "numeric" })}</span>
+                    <span>
+                      {new Date(post.publishedAt).toLocaleDateString("en-ZA", {
+                        year: "numeric",
+                        month: "long",
+                        day: "numeric",
+                      })}
+                    </span>
                     <span>·</span>
                     <span>{post.readTime}</span>
                   </div>
