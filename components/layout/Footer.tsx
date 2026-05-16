@@ -17,13 +17,13 @@ export default function Footer() {
   return (
     <footer className="bg-[#8B1A1A] relative overflow-hidden text-white/80">
       {/* Watermark logo */}
-      <div className="absolute inset-0 flex items-center justify-center pointer-events-none select-none" aria-hidden>
+      <div className="absolute inset-0 pointer-events-none select-none" aria-hidden>
         <Image
           src="/logo.png"
           alt=""
-          width={700}
-          height={280}
-          className="w-[600px] opacity-[0.06] object-contain"
+          fill
+          className="object-cover opacity-[0.07]"
+          sizes="100vw"
         />
       </div>
 
