@@ -15,9 +15,20 @@ const SOCIAL_ICONS = [
 
 export default function Footer() {
   return (
-    <footer className="bg-[#1C1C1C] text-white/80">
+    <footer className="bg-[#8B1A1A] relative overflow-hidden text-white/80">
+      {/* Watermark logo */}
+      <div className="absolute inset-0 flex items-center justify-center pointer-events-none select-none" aria-hidden>
+        <Image
+          src="/logo.png"
+          alt=""
+          width={700}
+          height={280}
+          className="w-[600px] opacity-[0.06] object-contain"
+        />
+      </div>
+
       {/* Main footer */}
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+      <div className="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
           {/* Brand */}
           <div className="lg:col-span-1">
@@ -37,7 +48,7 @@ export default function Footer() {
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label={label}
-                  className="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center hover:bg-[#C8960C] transition-colors"
+                  className="w-8 h-8 rounded-full bg-white/15 flex items-center justify-center hover:bg-[#C8960C] transition-colors"
                 >
                   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-3.5 h-3.5" aria-hidden="true">
                     <path d={path} />
@@ -102,28 +113,25 @@ export default function Footer() {
             </h3>
             <ul className="space-y-3">
               <li className="flex items-start gap-2.5">
-                <MapPin className="w-4 h-4 text-[#C8960C] mt-0.5 shrink-0" />
+                <MapPin className="w-4 h-4 text-[#E8B84B] mt-0.5 shrink-0" />
                 <span className="text-sm">{SITE.address.full}</span>
               </li>
               <li className="flex items-center gap-2.5">
-                <Phone className="w-4 h-4 text-[#C8960C] shrink-0" />
+                <Phone className="w-4 h-4 text-[#E8B84B] shrink-0" />
                 <a href={`tel:${SITE.phone}`} className="text-sm hover:text-[#E8B84B] transition-colors">
                   {SITE.phone}
                 </a>
               </li>
               <li className="flex items-center gap-2.5">
-                <Mail className="w-4 h-4 text-[#C8960C] shrink-0" />
-                <a
-                  href={`mailto:${SITE.email}`}
-                  className="text-sm hover:text-[#E8B84B] transition-colors"
-                >
+                <Mail className="w-4 h-4 text-[#E8B84B] shrink-0" />
+                <a href={`mailto:${SITE.email}`} className="text-sm hover:text-[#E8B84B] transition-colors">
                   {SITE.email}
                 </a>
               </li>
             </ul>
-            <div className="mt-5 p-3 bg-white/5 rounded-lg border border-white/10">
+            <div className="mt-5 p-3 bg-white/10 rounded-lg border border-white/15">
               <p className="text-xs text-white/60 mb-1">Registration</p>
-              <p className="text-xs text-white/80 font-mono">{SITE.registration.number}</p>
+              <p className="text-xs text-white font-mono">{SITE.registration.number}</p>
               <p className="text-xs text-white/60 mt-1">{SITE.registration.type}</p>
             </div>
           </div>
@@ -131,7 +139,7 @@ export default function Footer() {
       </div>
 
       {/* Bottom bar */}
-      <div className="border-t border-white/10">
+      <div className="relative border-t border-white/20">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-5 flex flex-col sm:flex-row justify-between items-center gap-3 text-xs text-white/50">
           <p>
             © {new Date().getFullYear()} Ghana Diaspora SA (GDSA). All rights reserved. NPC Reg: {SITE.registration.number}
