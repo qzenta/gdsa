@@ -10,9 +10,9 @@ featured: true
 readTime: "8 min read"
 ---
 
-South Africa is home to one of the largest communities of African migrants on the continent. Ghanaians, Zimbabweans, Nigerians, Ethiopians, and many others come seeking opportunity, safety, and a better future. But navigating life here — especially the legal and bureaucratic systems — can be overwhelming without guidance.
+South Africa is home to one of the largest communities of African migrants on the continent. Ghanaians, Zimbabweans, Nigerians, Ethiopians, and many others come here looking for opportunity, safety, and a better life. But getting to grips with the legal and bureaucratic systems can be overwhelming without the right guidance.
 
-This guide pulls together the most important things every African migrant in South Africa should know.
+This guide covers the most important things every African migrant in South Africa needs to know.
 
 ## Your First Priority: Documentation
 
@@ -31,7 +31,7 @@ GDSA offers free documentation clinics and can assist you understand your permit
 
 ## Understanding the Department of Home Affairs
 
-The Department of Home Affairs (DHA) manages all immigration documentation in South Africa. Dealing with DHA can be challenging — long queues, changing requirements, and frequent system outages are common complaints.
+The Department of Home Affairs (DHA) handles all immigration documentation in South Africa. Dealing with DHA is rarely straightforward. Long queues, changing requirements, and system outages are things most migrants know all too well.
 
 ### Practical tips for DHA visits:
 
@@ -44,7 +44,7 @@ GDSA's [DHA Navigation Support](/support/dha-processes) service can help you pre
 
 ## Your Rights in South Africa
 
-South Africa's Constitution provides significant protections for everyone within its borders — including non-citizens.
+South Africa's Constitution protects everyone within its borders, including non-citizens.
 
 ### Key constitutional rights that apply to you:
 
@@ -89,14 +89,14 @@ If your child is refused enrolment, contact GDSA or the South African Human Righ
 
 ## Building Community
 
-Isolation is one of the hardest parts of migrant life. GDSA exists precisely to ensure you are not alone.
+Isolation is one of the hardest parts of migrant life. GDSA exists so you do not have to go through it alone.
 
 **How to connect:**
 - Join our [WhatsApp community group](https://chat.whatsapp.com/ghanadiasporasa)
 - Attend monthly community meetings in Alberton, Gauteng
 - Register as a [GDSA member](/membership) to access all our programmes
 
-South Africa can be a place of real opportunity for African migrants — but navigating it successfully requires knowledge, community, and the right support structures. GDSA is here to provide all three.
+South Africa can be a place of real opportunity for African migrants. But making it work requires knowledge, community, and the right support. GDSA is here to provide all three.
 
 ---
 

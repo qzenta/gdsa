@@ -10,9 +10,9 @@ featured: false
 readTime: "5 min read"
 ---
 
-As we step into 2025, we pause to reflect on everything our community achieved together in 2024. It was a year of challenges — Home Affairs system outages, ongoing xenophobic incidents, and the persistent difficulties of economic migration — but it was also a year of extraordinary resilience, solidarity, and impact.
+2024 was a hard year for many in our community. Home Affairs system failures, xenophobic incidents, and the daily pressures of economic migration made things difficult. But it was also a year of real results — people helped, cases won, and businesses started.
 
-Here is a summary of what GDSA accomplished in 2024, made possible by our members, donors, volunteers, and partner organisations.
+Here is what GDSA accomplished in 2024, thanks to our members, donors, volunteers, and partner organisations.
 
 ## People Served
 
@@ -24,7 +24,7 @@ In 2024, GDSA directly assisted **847 African migrants** across Gauteng. This in
 - **98 community members** enrolled in our entrepreneurship and skills development workshops
 - **47 children** supported in school enrolment disputes
 
-Behind each of these numbers is a real person — someone who needed support, found GDSA, and was not turned away.
+Every number here is a real person who needed help, found GDSA, and was not turned away.
 
 ## Legal Clinics
 
@@ -61,7 +61,7 @@ The programme ran for 8 weeks and covered:
 
 ## What Your Support Made Possible
 
-None of this happens without financial support. In 2024, GDSA operated on a combined budget sourced from:
+None of this is possible without financial support. In 2024, GDSA's budget came from:
 
 - Individual donations from the Ghanaian and broader African community in South Africa
 - Corporate CSR contributions from Gauteng-based businesses
@@ -87,7 +87,7 @@ In 2025, GDSA is focused on three priorities:
 2. **Launching a women's programme** — Specific support for migrant women facing intersecting vulnerabilities.
 3. **Digital documentation support** — Helping community members navigate the online DHA systems and VFS Global portals.
 
-We will also be investing in our digital presence — including this website — to make GDSA's resources accessible to more African migrants across South Africa.
+We are also building our digital presence, including this website, to reach more African migrants across South Africa.
 
 ## Thank You
 

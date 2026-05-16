@@ -17,11 +17,10 @@ export default function ServicesGrid() {
             How We Help
           </span>
           <h2 className="font-display text-3xl sm:text-4xl font-bold text-[#1C1C1C] mt-2 mb-4">
-            Comprehensive Migrant Support Services
+            Our Support Services
           </h2>
           <p className="text-[#3A3A3A] max-w-2xl mx-auto text-base leading-relaxed">
-            From your first day in South Africa to building a thriving life here — GDSA provides
-            practical, trusted support across every area of migrant life.
+            From permits and legal aid to housing, work, and healthcare — whatever you need help with, there is a service here for it.
           </p>
         </AnimateIn>
 

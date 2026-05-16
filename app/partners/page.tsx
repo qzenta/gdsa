@@ -136,7 +136,7 @@ export default function PartnersPage() {
       <PageHero
         label="Partnerships"
         title="Stronger Together for African Migrants."
-        subtitle="We do not work alone. GDSA's impact is multiplied through strategic partnerships with legal, humanitarian, government, and corporate organisations that share our values."
+        subtitle="GDSA does not work alone. We partner with legal, humanitarian, government, and corporate organisations that share what we believe in."
         image="/images/hero-partners.jpg"
         imageAlt="African partners and community leaders working together"
       />
@@ -154,8 +154,8 @@ export default function PartnersPage() {
                 Organisations We Work With
               </h2>
               <p className="text-[#3A3A3A] max-w-2xl mx-auto leading-relaxed">
-                Our implementing partners provide specialist services, legal expertise, and
-                humanitarian support that complement GDSA&apos;s community-facing work.
+                Our implementing partners bring specialist skills, legal expertise, and
+                humanitarian support alongside GDSA&apos;s community work.
               </p>
             </div>
           </AnimateIn>
@@ -237,7 +237,7 @@ export default function PartnersPage() {
                 <h3 className="font-display text-2xl font-bold mb-3">Become a Partner</h3>
                 <p className="text-white/80 leading-relaxed mb-6">
                   GDSA welcomes partnerships with organisations, businesses, foundations, embassies,
-                  and faith communities that are committed to the dignity and rights of African
+                  and faith communities that genuinely care about the rights and dignity of African
                   migrants in South Africa.
                 </p>
                 <p className="text-white/70 text-sm leading-relaxed mb-6">

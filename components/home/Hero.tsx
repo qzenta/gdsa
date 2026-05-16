@@ -14,14 +14,14 @@ const SLIDES = [
   {
     image: "/images/hero-community.jpg",
     alt: "African community group gathered together for support and solidarity",
-    headline: "Navigating South Africa is Easier When You Have Community.",
-    sub: "From asylum permits to entrepreneurship, GDSA walks the journey with you every step of the way.",
+    headline: "You Don't Have to Face South Africa Alone.",
+    sub: "From asylum permits to starting a business, GDSA is with you at every step.",
   },
   {
     image: "https://images.unsplash.com/photo-1532629345422-7515f3d16bb6?w=1600&q=80",
     alt: "Community volunteers helping African families in need",
     headline: "Building African Futures, One Family at a Time.",
-    sub: "We advocate for migrant rights, connect communities, and create economic opportunities for Africans across Gauteng.",
+    sub: "We fight for migrant rights, bring people together, and help Africans build real futures in Gauteng.",
   },
 ];
 

@@ -5,7 +5,7 @@ import AnimateIn from "@/components/shared/AnimateIn";
 const BENEFITS = [
   "Priority access to all GDSA support services",
   "Monthly community newsletter & updates",
-  "Invitations to exclusive networking events",
+  "Invitations to community events and meetups",
   "Access to discounted legal consultations",
   "Business mentorship programme eligibility",
   "Voting rights in GDSA community decisions",
@@ -25,8 +25,7 @@ export default function MembershipCTA() {
               Become a GDSA Member Today
             </h2>
             <p className="text-white/70 leading-relaxed mb-6">
-              Membership is open to all Africans and migrants in South Africa. Together we are
-              stronger, louder, and better supported.
+              Membership is open to all Africans and migrants in South Africa. Community is how we survive and grow.
             </p>
             <ul className="space-y-3 mb-8">
               {BENEFITS.map((b) => (
@@ -52,8 +51,7 @@ export default function MembershipCTA() {
               </div>
               <div className="w-full h-px bg-white/20 mb-6" />
               <p className="text-white/70 text-sm text-center leading-relaxed mb-6">
-                Nominal annual membership fee supports our community programmes and keeps GDSA running
-                for those who need us most.
+                The fee goes directly to our programmes. It keeps GDSA running for people who need us most.
               </p>
               <div className="space-y-2 mb-8">
                 {[

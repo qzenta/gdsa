@@ -64,7 +64,7 @@ export default function AboutPage() {
       <PageHero
         label="About GDSA"
         title="Built by the Community, for the Community."
-        subtitle="Ghana Diaspora SA was founded in 2020 with one vision: that no African migrant in South Africa should face the challenges of documentation, discrimination, or isolation alone."
+        subtitle="Ghana Diaspora SA was founded in 2020 with a simple belief: no African migrant in South Africa should face documentation challenges, discrimination, or isolation on their own."
         image="/images/hero-about.jpg"
         imageAlt="African community members gathered together"
       />
@@ -85,21 +85,20 @@ export default function AboutPage() {
               </h2>
               <div className="space-y-4 text-[#3A3A3A] leading-relaxed">
                 <p>
-                  Ghana Diaspora SA was born from a simple but urgent recognition: thousands of
-                  Ghanaians and other African migrants in South Africa were navigating complex
-                  immigration systems, language barriers, labour exploitation, and social isolation —
-                  largely alone.
+                  GDSA was born from something real: thousands of Ghanaians and other African migrants
+                  in South Africa were dealing with complex immigration systems, language barriers,
+                  labour exploitation, and loneliness, mostly on their own.
                 </p>
                 <p>
-                  In January 2020, a group of committed community leaders formally registered GDSA as
-                  a Non Profit Company under South African law. What began as a small mutual support
-                  network has grown into a trusted institutional platform serving over 2,400 community
-                  members from more than 15 African nationalities.
+                  In January 2020, a group of community leaders registered GDSA as a Non Profit Company
+                  under South African law. What started as a small mutual support network has grown into
+                  a trusted organisation serving over 2,400 community members from more than 15 African
+                  nationalities.
                 </p>
                 <p>
-                  Today, GDSA operates across Gauteng, with programmes covering documentation
-                  support, legal referrals, entrepreneurship, community advocacy, and emergency
-                  assistance — always rooted in the principle that every migrant deserves dignity.
+                  Today GDSA operates across Gauteng, running programmes in documentation support, legal
+                  referrals, entrepreneurship, community advocacy, and emergency assistance. All of it
+                  built on one principle: every migrant deserves dignity.
                 </p>
               </div>
             </AnimateIn>
@@ -210,8 +209,8 @@ export default function AboutPage() {
               Our Leadership Team
             </h2>
             <p className="text-[#3A3A3A] max-w-xl mx-auto mb-8">
-              GDSA is led by a dedicated board of directors committed to the African migrant community
-              in South Africa. Leadership profiles coming soon.
+              GDSA is led by a board of directors who have been part of the African migrant community
+              in South Africa from the beginning. Leadership profiles coming soon.
             </p>
             <Link
               href="/contact"

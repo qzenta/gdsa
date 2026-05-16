@@ -25,7 +25,7 @@ export default function SupportPage() {
       <PageHero
         label="Migrant Support Hub"
         title="Every Challenge Has a Path Through It."
-        subtitle="GDSA provides trusted, community-driven support across every dimension of migrant life in South Africa — from day one to full integration."
+        subtitle="GDSA gives practical, community-backed support for every part of life as a migrant in South Africa — from the day you arrive to the day you feel at home."
         image="/images/hero-support.jpg"
         imageAlt="African community volunteers providing migrant support and assistance"
       />
@@ -62,7 +62,7 @@ export default function SupportPage() {
               How GDSA Can Help You
             </h2>
             <p className="text-[#3A3A3A] max-w-2xl mx-auto">
-              Click any service below to learn more, access guides, and find out how to get direct support from our team.
+              Click any service below for guides, information, and details on how to reach our team directly.
             </p>
           </AnimateIn>
 

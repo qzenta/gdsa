@@ -1,9 +1,9 @@
 export const SITE = {
   name: "Ghana Diaspora SA",
   shortName: "GDSA",
-  tagline: "Empowering African Migrants. Building Community. Advancing Rights.",
+  tagline: "By Africans, For Africans. Rooted in South Africa.",
   description:
-    "Ghana Diaspora SA (GDSA) is a registered non-profit organisation supporting Ghanaians and all African migrants navigating life, documentation, and opportunity in South Africa.",
+    "Ghana Diaspora SA (GDSA) is a registered non-profit organisation supporting Ghanaians and all African migrants with documentation, legal rights, and community life in South Africa.",
   url: "https://www.ghanadiasporasa.org",
   domain: "ghanadiasporasa.org",
   email: "info@ghanadiasporasa.org",
@@ -60,9 +60,9 @@ export const SUPPORT_SERVICES = [
     shortTitle: "Visa Renewals",
     icon: "RefreshCw",
     description:
-      "Comprehensive support for renewing temporary residence permits, critical skills visas, and other immigration documents.",
+      "Help with renewing temporary residence permits, critical skills visas, and other immigration documents before they expire.",
     heroSubtitle:
-      "Avoid overstays and penalties with timely, informed visa renewal support.",
+      "Avoid overstays and penalties. We help you renew on time with the right documents.",
     color: "brand",
   },
   {
@@ -71,7 +71,7 @@ export const SUPPORT_SERVICES = [
     shortTitle: "DHA Processes",
     icon: "Building2",
     description:
-      "Practical assistance navigating Home Affairs queues, document requirements, and appointment systems.",
+      "Practical help with Home Affairs queues, document requirements, and the appointment system so you are not turned away.",
     heroSubtitle:
       "We help you prepare everything before you walk through the DHA door.",
     color: "brand",
@@ -115,9 +115,9 @@ export const SUPPORT_SERVICES = [
     shortTitle: "Healthcare",
     icon: "HeartPulse",
     description:
-      "Navigate public and private healthcare, understand your rights as a patient, and access community health resources.",
+      "Get help with public and private healthcare, know your rights as a patient, and connect with community health resources.",
     heroSubtitle:
-      "Healthcare is a right. We help you access it regardless of your status.",
+      "Healthcare is a right. Your permit status does not change that.",
     color: "brand",
   },
   {
@@ -172,7 +172,7 @@ export const SUPPORT_SERVICES = [
     description:
       "Support for migrants starting businesses in South Africa — registration, funding, permits, and mentorship.",
     heroSubtitle:
-      "Build your future. We support African entrepreneurs every step of the way.",
+      "Build something real. We support African entrepreneurs from registration to their first sale.",
     color: "brand",
   },
 ];

@@ -33,9 +33,7 @@ export default function DonateSection() {
               Your Donation Changes Lives
             </h2>
             <p className="text-[#3A3A3A] leading-relaxed mb-6">
-              GDSA is a registered Non Profit Company. Every contribution directly funds migrant
-              support services, community programmes, legal clinics, and advocacy work that protects
-              the rights of African migrants across Gauteng.
+              GDSA is a registered Non Profit Company. Every rand you give goes directly to support services, legal clinics, and advocacy for African migrants in Gauteng.
             </p>
             <div className="space-y-3 mb-8">
               {IMPACT.map((item) => {
@@ -72,7 +70,7 @@ export default function DonateSection() {
             <div className="bg-[#8B1A1A] rounded-2xl p-8 text-white">
               <h3 className="font-display text-2xl font-bold mb-2">Make a Monthly Impact</h3>
               <p className="text-white/70 text-sm mb-6">
-                Monthly donors form the backbone of our community programmes. Join our sustainers today.
+                Monthly donors keep our programmes going. Join them today.
               </p>
               <div className="grid grid-cols-3 gap-3 mb-5">
                 {["R100", "R250", "R500", "R750", "R1,000", "Custom"].map((amt) => (

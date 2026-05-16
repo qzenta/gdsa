@@ -10,9 +10,9 @@ featured: false
 readTime: "6 min read"
 ---
 
-One of the most common ways African migrants are exploited in South Africa is through labour — being paid less than minimum wage, working without contracts, being threatened with deportation if they complain, or simply never being paid at all.
+One of the most common ways African migrants are exploited in South Africa is through work. Being paid less than minimum wage, working without a contract, being threatened with deportation for complaining, or simply never being paid at all.
 
-This stops here. South Africa's labour law is clear: **it applies to everyone who works in South Africa**, regardless of nationality, permit status, or immigration documentation.
+It does not have to be that way. South Africa's labour law is clear: **it applies to everyone who works here**, regardless of nationality, permit status, or documentation.
 
 ## The Basic Conditions of Employment Act (BCEA)
 
@@ -92,7 +92,7 @@ The Izwi Domestic Workers Alliance and GDSA work together to support domestic wo
 - Accompaniment to CCMA hearings if needed
 - Rapid response if your employer threatens you with immigration authorities
 
-You work hard. You deserve to be paid fairly and treated with dignity. South Africa's law says so — and GDSA will stand with you to enforce it.
+You work hard. You deserve fair pay and to be treated with respect. South Africa's law says so, and GDSA will stand with you to make sure it happens.
 
 ---
 
