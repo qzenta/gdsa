@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { ArrowRight, FileText, RefreshCw, Building2, Scale, Briefcase, Landmark, HeartPulse, GraduationCap, Home, AlertCircle, Shield, TrendingUp, Phone } from "lucide-react";
+import { ArrowRight, FileText, RefreshCw, Building2, Scale, Briefcase, Landmark, HeartPulse, GraduationCap, Home, AlertCircle, Shield, TrendingUp, CreditCard, Phone } from "lucide-react";
 import PageHero from "@/components/shared/PageHero";
 import AnimateIn from "@/components/shared/AnimateIn";
 import { buildMetadata } from "@/lib/metadata";
@@ -16,7 +16,7 @@ export const metadata: Metadata = buildMetadata({
 
 const ICON_MAP: Record<string, React.ComponentType<{ className?: string }>> = {
   FileText, RefreshCw, Building2, Scale, Briefcase, Landmark,
-  HeartPulse, GraduationCap, Home, AlertCircle, Shield, TrendingUp,
+  HeartPulse, GraduationCap, Home, AlertCircle, Shield, TrendingUp, CreditCard,
 };
 
 export default function SupportPage() {

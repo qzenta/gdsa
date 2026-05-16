@@ -3,7 +3,7 @@ import PageHero from "@/components/shared/PageHero";
 import AnimateIn from "@/components/shared/AnimateIn";
 import { buildMetadata, buildFAQSchema } from "@/lib/metadata";
 import { SITE } from "@/lib/site";
-import { CheckCircle, Target, Eye, Heart, Handshake } from "lucide-react";
+import { CheckCircle, Target, Eye, Heart, Handshake, CreditCard, Briefcase, Building, Banknote, Vote } from "lucide-react";
 import Link from "next/link";
 
 export const metadata: Metadata = buildMetadata({
@@ -148,9 +148,9 @@ export default function AboutPage() {
                 <h3 className="font-display text-xl font-bold mb-3 group-hover:text-[#E8B84B] transition-colors duration-300">Our Mission</h3>
                 <p className="text-white/80 leading-relaxed group-hover:text-white transition-colors duration-300">
                   To empower African migrants in South Africa through community-driven support,
-                  legal awareness, documentation assistance, entrepreneurship development, and
-                  advocacy for migrant rights — ensuring every individual has the dignity, information,
-                  and resources to build a stable and fulfilling life.
+                  legal awareness, and documentation assistance. For Ghanaians specifically, this
+                  means ensuring every diaspora member can access the same rights, services, and
+                  opportunities enjoyed by Ghanaians at home — starting with the Ghana Card.
                 </p>
               </div>
             </AnimateIn>
@@ -195,6 +195,88 @@ export default function AboutPage() {
               );
             })}
           </div>
+        </div>
+      </section>
+
+      {/* Ghana Card & Diaspora Rights */}
+      <section id="diaspora-rights" className="py-20 bg-[#1C1C1C]">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <AnimateIn>
+            <div className="text-center mb-12">
+              <span className="text-xs font-bold tracking-widest uppercase text-[#C8960C]">
+                Diaspora Rights
+              </span>
+              <h2 className="font-display text-3xl sm:text-4xl font-bold text-white mt-2 mb-4">
+                Ghana Card: Your Bridge Back Home
+              </h2>
+              <p className="text-white/70 max-w-2xl mx-auto leading-relaxed">
+                The NIA Ghana Card is the single most important document a Ghanaian outside of Ghana can hold.
+                It is not just an ID — it is the key to full participation in Ghanaian economic and civic life, from anywhere in the world.
+              </p>
+            </div>
+          </AnimateIn>
+
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5 mb-12">
+            {[
+              {
+                icon: Building,
+                title: "Register a Business in Ghana",
+                desc: "Open and operate a company with the Registrar General's Department without setting foot in Ghana. The Ghana Card is the required ID.",
+              },
+              {
+                icon: Banknote,
+                title: "Open a Ghanaian Bank Account",
+                desc: "Major Ghanaian banks — GCB, Ecobank, Fidelity — now require the Ghana Card for account opening. This unlocks local banking, transfers, and investment from abroad.",
+              },
+              {
+                icon: Briefcase,
+                title: "GRA Tax ID, SSNIT & Pension",
+                desc: "Get your Ghana Revenue Authority TIN and SSNIT number. Register your pension contributions. The Ghana Card ties all your government identifiers together.",
+              },
+              {
+                icon: Vote,
+                title: "Voting, Property & MoMo",
+                desc: "Register to vote in Ghanaian elections from abroad. Register for Mobile Money. Buy or sell property. Renew your Ghanaian passport with ease.",
+              },
+            ].map((item, i) => {
+              const Icon = item.icon;
+              return (
+                <AnimateIn key={item.title} delay={i * 70}>
+                  <div className="bg-white/5 rounded-xl p-6 border border-white/10 h-full">
+                    <div className="w-11 h-11 rounded-lg bg-[#C8960C]/20 flex items-center justify-center mb-4">
+                      <Icon className="w-5 h-5 text-[#C8960C]" />
+                    </div>
+                    <h3 className="font-display font-bold text-white text-sm mb-2">{item.title}</h3>
+                    <p className="text-white/60 text-sm leading-relaxed">{item.desc}</p>
+                  </div>
+                </AnimateIn>
+              );
+            })}
+          </div>
+
+          <AnimateIn>
+            <div className="bg-[#8B1A1A] rounded-2xl p-8 flex flex-col sm:flex-row items-center gap-6">
+              <div className="w-14 h-14 rounded-full bg-white/10 flex items-center justify-center shrink-0">
+                <CreditCard className="w-7 h-7 text-[#E8B84B]" />
+              </div>
+              <div className="flex-1 text-center sm:text-left">
+                <h3 className="font-display text-xl font-bold text-white mb-1">
+                  GDSA Helps You Register for Your Ghana Card
+                </h3>
+                <p className="text-white/75 text-sm leading-relaxed">
+                  NIA diaspora registration is available at Ghanaian embassies and consulates worldwide.
+                  GDSA guides members through the process, prepares the required documents, and coordinates
+                  with the Ghana High Commission in Pretoria.
+                </p>
+              </div>
+              <Link
+                href="/support/ghana-card"
+                className="shrink-0 px-6 py-3 bg-[#C8960C] text-white font-semibold rounded-lg hover:bg-[#E8B84B] transition-colors text-sm whitespace-nowrap"
+              >
+                Get Your Ghana Card
+              </Link>
+            </div>
+          </AnimateIn>
         </div>
       </section>
 

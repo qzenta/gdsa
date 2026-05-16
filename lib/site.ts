@@ -175,6 +175,17 @@ export const SUPPORT_SERVICES = [
       "Build something real. We support African entrepreneurs from registration to their first sale.",
     color: "brand",
   },
+  {
+    slug: "ghana-card",
+    title: "Ghana Card & Diaspora Rights",
+    shortTitle: "Ghana Card",
+    icon: "CreditCard",
+    description:
+      "Assistance with NIA Ghana Card registration for diaspora Ghanaians — the single document that unlocks business, banking, government services, and full citizenship rights back home.",
+    heroSubtitle:
+      "Your Ghana Card is the key to every right and opportunity back home. GDSA helps you get it.",
+    color: "brand",
+  },
 ];
 
 export const BLOG_CATEGORIES = [
@@ -267,6 +278,7 @@ export const NAV_LINKS = [
       { label: "DHA Navigation", href: "/support/dha-processes" },
       { label: "Legal Referrals", href: "/support/legal-referrals" },
       { label: "Labour Rights", href: "/support/labour-rights" },
+      { label: "Ghana Card", href: "/support/ghana-card" },
       { label: "All Support Services", href: "/support" },
     ],
   },
