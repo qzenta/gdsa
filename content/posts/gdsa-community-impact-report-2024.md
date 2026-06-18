@@ -5,7 +5,7 @@ category: "Community"
 tags: ["impact", "annual report", "community", "2024", "Gauteng"]
 publishedAt: "2025-01-10"
 author: "GDSA Secretariat"
-featuredImage: "https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=1200&q=80"
+featuredImage: "/images/news/news-community-impact.jpg"
 featured: false
 readTime: "5 min read"
 ---

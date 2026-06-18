@@ -5,7 +5,7 @@ category: "Rights"
 tags: ["Ghana Card", "NIA", "diaspora rights", "Ghanaian identity", "business in Ghana"]
 publishedAt: "2025-05-20"
 author: "K.A. Mensah"
-featuredImage: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?w=1200&q=80"
+featuredImage: "/images/news/news-ghana-card.jpg"
 featured: true
 readTime: "7 min read"
 ---

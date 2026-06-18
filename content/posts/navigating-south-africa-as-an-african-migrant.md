@@ -5,7 +5,7 @@ category: "Guides"
 tags: ["immigration", "documentation", "rights", "South Africa", "migrants"]
 publishedAt: "2025-04-15"
 author: "GDSA Team"
-featuredImage: "https://images.unsplash.com/photo-1523805009345-7448845a9e53?w=1200&q=80"
+featuredImage: "/images/news/news-navigating-sa.jpg"
 featured: true
 readTime: "8 min read"
 ---

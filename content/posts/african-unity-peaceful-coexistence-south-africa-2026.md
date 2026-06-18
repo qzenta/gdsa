@@ -5,7 +5,7 @@ category: "Advocacy"
 tags: ["advocacy", "African unity", "xenophobia", "human rights", "South Africa", "2026"]
 publishedAt: "2026-06-18"
 author: "GDSA Team"
-featuredImage: "https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=1200&q=80"
+featuredImage: "/images/news/news-african-unity.jpg"
 featured: false
 readTime: "7 min read"
 ---

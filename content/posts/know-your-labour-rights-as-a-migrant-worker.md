@@ -5,7 +5,7 @@ category: "Rights"
 tags: ["labour rights", "employment", "exploitation", "BCEA", "migrants"]
 publishedAt: "2025-05-20"
 author: "GDSA Legal Desk"
-featuredImage: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=1200&q=80"
+featuredImage: "/images/news/news-labour-rights.jpg"
 featured: false
 readTime: "6 min read"
 ---

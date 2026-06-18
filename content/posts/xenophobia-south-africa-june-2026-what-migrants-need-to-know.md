@@ -5,7 +5,7 @@ category: "Migrant Rights"
 tags: ["xenophobia", "migrant rights", "South Africa", "safety", "legal rights", "2026"]
 publishedAt: "2026-06-18"
 author: "GDSA Team"
-featuredImage: "https://images.unsplash.com/photo-1529107386315-e1a2ed48a620?w=1200&q=80"
+featuredImage: "/images/news/news-xenophobia-rights.jpg"
 featured: true
 readTime: "6 min read"
 ---

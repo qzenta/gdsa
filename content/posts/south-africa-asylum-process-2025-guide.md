@@ -5,7 +5,7 @@ category: "Immigration Updates"
 tags: ["asylum", "DHA", "permits", "refugee", "South Africa", "immigration"]
 publishedAt: "2025-05-01"
 author: "GDSA Team"
-featuredImage: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=1200&q=80"
+featuredImage: "/images/news/news-asylum-process.jpg"
 featured: false
 readTime: "8 min read"
 ---
