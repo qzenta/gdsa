@@ -8,13 +8,13 @@ const SLIDES = [
   {
     image: "/images/hero-home.jpg",
     alt: "African migrants and families seeking support and assistance",
-    headline: "Every Migrant Deserves Dignity, Rights, and a Fair Start.",
+    headline: "Dignity, Rights, and a Fair Start for Every Migrant.",
     sub: "Ghana Diaspora SA supports over 2,400 Africans in South Africa with documentation, legal aid, community, and opportunity.",
   },
   {
     image: "/images/hero-community.jpg",
     alt: "African community group gathered together for support and solidarity",
-    headline: "You Don't Have to Face South Africa Alone.",
+    headline: "You Don't Have to Face This Alone.",
     sub: "From asylum permits to starting a business, GDSA is with you at every step.",
   },
   {

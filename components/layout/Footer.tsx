@@ -33,9 +33,7 @@ export default function Footer() {
           {/* Brand */}
           <div className="lg:col-span-1">
             <div className="mb-4">
-              <div className="bg-white rounded-xl overflow-hidden inline-block p-1">
-                <Image src="/logo.png" alt="Ghana Diaspora SA" width={160} height={64} className="h-16 w-auto object-contain" />
-              </div>
+              <Image src="/logo.png" alt="Ghana Diaspora SA" width={160} height={64} className="h-16 w-auto object-contain" />
             </div>
             <p className="text-sm leading-relaxed mb-5">
               Empowering African migrants. Building community. Advancing rights in South Africa since 2020.
