@@ -6,7 +6,7 @@ import { ArrowRight, ChevronRight } from "lucide-react";
 
 const SLIDES = [
   {
-    image: "https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=1600&q=80",
+    image: "/images/hero-home.jpg",
     alt: "African migrants and families seeking support and assistance",
     headline: "Every Migrant Deserves Dignity, Rights, and a Fair Start.",
     sub: "Ghana Diaspora SA supports over 2,400 Africans in South Africa with documentation, legal aid, community, and opportunity.",

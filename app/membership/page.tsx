@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import PageHero from "@/components/shared/PageHero";
 import AnimateIn from "@/components/shared/AnimateIn";
 import { buildMetadata } from "@/lib/metadata";
-import { CheckCircle, Users, Star, Heart } from "lucide-react";
+import { CheckCircle, Users, Star, Heart, GraduationCap } from "lucide-react";
 import MembershipForm from "@/components/membership/MembershipForm";
 
 export const metadata: Metadata = buildMetadata({
@@ -27,6 +27,23 @@ const TIERS = [
       "Emergency referral",
     ],
     featured: false,
+    note: null,
+  },
+  {
+    icon: GraduationCap,
+    name: "Student",
+    price: "R50",
+    period: "per year",
+    features: [
+      "Priority support access",
+      "Monthly newsletter",
+      "Community events access",
+      "Basic legal guidance",
+      "Emergency referral",
+      "Valid student ID required",
+    ],
+    featured: false,
+    note: "Valid student ID required at time of application.",
   },
   {
     icon: Heart,
@@ -41,6 +58,7 @@ const TIERS = [
       "Youth programme access",
     ],
     featured: true,
+    note: null,
   },
   {
     icon: Star,
@@ -55,6 +73,7 @@ const TIERS = [
       "Annual impact report",
     ],
     featured: false,
+    note: null,
   },
 ];
 
@@ -110,7 +129,7 @@ export default function MembershipPage() {
             </h2>
           </AnimateIn>
 
-          <div className="grid md:grid-cols-3 gap-6 mb-16">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
             {TIERS.map((tier, i) => {
               const Icon = tier.icon;
               return (
@@ -139,7 +158,7 @@ export default function MembershipPage() {
                         {tier.period}
                       </span>
                     </div>
-                    <ul className="space-y-2.5 flex-1 mb-6">
+                    <ul className="space-y-2.5 flex-1 mb-4">
                       {tier.features.map((f) => (
                         <li key={f} className="flex items-start gap-2">
                           <CheckCircle className={`w-3.5 h-3.5 mt-0.5 shrink-0 ${tier.featured ? "text-[#E8B84B]" : "text-[#C8960C]"}`} />
@@ -147,6 +166,11 @@ export default function MembershipPage() {
                         </li>
                       ))}
                     </ul>
+                    {tier.note && (
+                      <p className={`text-xs mt-auto ${tier.featured ? "text-white/50" : "text-[#3A3A3A]/50"}`}>
+                        {tier.note}
+                      </p>
+                    )}
                   </div>
                 </AnimateIn>
               );

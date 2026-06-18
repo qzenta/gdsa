@@ -33,7 +33,7 @@ export function buildMetadata({
   ];
 
   return {
-    title: `${title} | ${SITE.name}`,
+    title,
     description,
     keywords: [...baseKeywords, ...keywords],
     authors: [{ name: SITE.name }],

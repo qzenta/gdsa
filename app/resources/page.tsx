@@ -146,13 +146,17 @@ export default function ResourcesPage() {
                         <Icon className="w-5 h-5 text-[#8B1A1A]" />
                       </div>
                       <span className="text-xs font-bold text-[#3A3A3A]/50 bg-[#F7F4EF] px-2 py-0.5 rounded border border-[#EDE8E0]">
-                        {d.type} • {d.size}
+                        {d.type}
                       </span>
                     </div>
                     <h3 className="font-semibold text-[#1C1C1C] text-sm mb-2 leading-snug">{d.title}</h3>
                     <p className="text-[#3A3A3A] text-xs leading-relaxed flex-1 mb-4">{d.desc}</p>
-                    <button className="flex items-center gap-2 text-[#8B1A1A] text-sm font-semibold hover:underline">
-                      <Download className="w-3.5 h-3.5" /> Download (Coming Soon)
+                    <button
+                      disabled
+                      aria-disabled="true"
+                      className="flex items-center gap-2 text-[#3A3A3A]/40 text-sm font-semibold cursor-not-allowed"
+                    >
+                      <Download className="w-3.5 h-3.5" /> Coming Soon
                     </button>
                   </div>
                 </AnimateIn>

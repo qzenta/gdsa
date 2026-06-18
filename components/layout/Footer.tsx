@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { SITE, SUPPORT_SERVICES } from "@/lib/site";
-import { Mail, Phone, MapPin } from "lucide-react";
+import { Mail, MapPin } from "lucide-react";
 
 const supportLinks = SUPPORT_SERVICES.slice(0, 6);
 
@@ -115,12 +115,6 @@ export default function Footer() {
               <li className="flex items-start gap-2.5">
                 <MapPin className="w-4 h-4 text-[#E8B84B] mt-0.5 shrink-0" />
                 <span className="text-sm">{SITE.address.full}</span>
-              </li>
-              <li className="flex items-center gap-2.5">
-                <Phone className="w-4 h-4 text-[#E8B84B] shrink-0" />
-                <a href={`tel:${SITE.phone}`} className="text-sm hover:text-[#E8B84B] transition-colors">
-                  {SITE.phone}
-                </a>
               </li>
               <li className="flex items-center gap-2.5">
                 <Mail className="w-4 h-4 text-[#E8B84B] shrink-0" />

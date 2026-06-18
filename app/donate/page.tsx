@@ -78,8 +78,12 @@ export default function DonatePage() {
                 <p className="text-sm font-semibold text-[#1C1C1C] mb-3">Donate via EFT / Direct Transfer:</p>
                 <div className="space-y-2">
                   {[
-                    { label: "Account Name", val: "Ghana Diaspora SA" },
-                    { label: "Account No.", val: "Contact us for details" },
+                    { label: "Account Name", val: "Ghana Diaspora SA NPC" },
+                    { label: "Bank", val: "First National Bank (FNB)" },
+                    { label: "Account Number", val: "62839430080" },
+                    { label: "Branch", val: "Bracken City" },
+                    { label: "Branch Code", val: "250655" },
+                    { label: "Account Type", val: "Cheque" },
                     { label: "Reference", val: "GDSA-DONATION-[Your Name]" },
                   ].map((r) => (
                     <div key={r.label} className="flex justify-between text-sm">
@@ -88,6 +92,14 @@ export default function DonatePage() {
                     </div>
                   ))}
                 </div>
+                <p className="text-xs text-[#3A3A3A]/50 mt-4 leading-relaxed">
+                  GDSA will never ask you to change these banking details by phone or email.
+                  If you receive such a request, contact us directly at{" "}
+                  <a href="mailto:info@ghanadiasporasa.org" className="underline">
+                    info@ghanadiasporasa.org
+                  </a>{" "}
+                  before making any payment.
+                </p>
               </div>
 
               {/* Volunteer */}
