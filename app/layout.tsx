@@ -5,6 +5,8 @@ import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import WhatsAppButton from "@/components/shared/WhatsAppButton";
 import DonorPopup from "@/components/shared/DonorPopup";
+import GoogleAnalytics from "@/components/shared/GoogleAnalytics";
+import MicrosoftClarity from "@/components/shared/MicrosoftClarity";
 import { SITE } from "@/lib/site";
 import { buildOrganizationSchema, buildWebSiteSchema } from "@/lib/metadata";
 import { Analytics } from "@vercel/analytics/next";
@@ -55,6 +57,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         />
       </head>
       <body className="min-h-screen flex flex-col font-sans antialiased bg-white text-[#1C1C1C]">
+        <GoogleAnalytics />
+        <MicrosoftClarity />
         <Header />
         <main className="flex-1">{children}</main>
         <Footer />
